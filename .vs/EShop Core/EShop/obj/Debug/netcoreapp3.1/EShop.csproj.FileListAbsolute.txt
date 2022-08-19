@@ -1,0 +1,1058 @@
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.AssemblyReference.cache
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.AssemblyInfoInputs.cache
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.AssemblyInfo.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.CoreCompileInputs.cache
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorAssemblyInfo.cache
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorAssemblyInfo.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\staticwebassets\EShop.StaticWebAssets.Manifest.cache
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\staticwebassets\EShop.StaticWebAssets.xml
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\scopedcss\bundle\EShop.styles.css
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.TagHelpers.input.cache
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.TagHelpers.output.cache
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorCoreGenerate.cache
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Customers\CustomerForm.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Index.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Create.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Index.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\OrderForm.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorTargetAssemblyInfo.cache
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorTargetAssemblyInfo.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.dll
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.pdb
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.exe
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.deps.json
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.runtimeconfig.json
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.runtimeconfig.dev.json
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.pdb
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.Views.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.Views.pdb
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Themis\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.Views.pdb
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.CopyComplete
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.genruntimeconfig.cache
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Products\ProductForm.cshtml.g.cs
+C:\Users\Themis\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Themis\Desktop\Eshop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
+C:\Users\Themis\Desktop\Eshop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
+C:\Users\Themis\Desktop\Eshop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Login.cshtml.g.cs
+C:\Users\Themis\Desktop\Eshop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Register.cshtml.g.cs
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Themis\Desktop\Eshop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Themis\Desktop\Eshop\EShop\obj\Debug\netcoreapp3.1\EShop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.StaticWebAssets.xml
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.exe
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.deps.json
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.runtimeconfig.json
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.runtimeconfig.dev.json
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.pdb
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.Views.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.Views.pdb
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.AssemblyReference.cache
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.AssemblyInfoInputs.cache
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.AssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.CoreCompileInputs.cache
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorAssemblyInfo.cache
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\staticwebassets\EShop.StaticWebAssets.Manifest.cache
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.TagHelpers.input.cache
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.TagHelpers.output.cache
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorCoreGenerate.cache
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Customers\CustomerForm.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Create.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\OrderForm.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Products\ProductForm.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Login.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Register.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorTargetAssemblyInfo.cache
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorTargetAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.Views.pdb
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.CopyComplete
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.dll
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.pdb
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.genruntimeconfig.cache
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.Migrations.migration.resources
+C:\Users\ttsil.VERTITECH\Desktop\Project\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.GenerateResource.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.StaticWebAssets.xml
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.exe
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.deps.json
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.runtimeconfig.json
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.runtimeconfig.dev.json
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.pdb
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.Views.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.Views.pdb
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.AssemblyReference.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.Migrations.migration.resources
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.GenerateResource.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.AssemblyInfoInputs.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.AssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.CoreCompileInputs.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorAssemblyInfo.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\staticwebassets\EShop.StaticWebAssets.Manifest.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.TagHelpers.input.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.TagHelpers.output.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorCoreGenerate.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Customers\CustomerForm.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Create.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\OrderForm.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Products\ProductForm.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Login.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Register.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorTargetAssemblyInfo.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorTargetAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.Views.pdb
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.CopyComplete
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.pdb
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.genruntimeconfig.cache
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.AssemblyReference.cache
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.Migrations.migration.resources
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.GenerateResource.cache
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.GeneratedMSBuildEditorConfig.editorconfig
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.AssemblyInfoInputs.cache
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.AssemblyInfo.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.CoreCompileInputs.cache
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.MvcApplicationPartsAssemblyInfo.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.MvcApplicationPartsAssemblyInfo.cache
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorAssemblyInfo.cache
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorAssemblyInfo.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\staticwebassets\EShop.StaticWebAssets.Manifest.cache
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\staticwebassets\EShop.StaticWebAssets.xml
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\scopedcss\bundle\EShop.styles.css
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.TagHelpers.input.cache
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.TagHelpers.output.cache
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorCoreGenerate.cache
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Customers\CustomerForm.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Index.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Create.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Index.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\OrderForm.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Products\ProductForm.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Login.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Register.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorTargetAssemblyInfo.cache
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorTargetAssemblyInfo.cs
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.dll
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.pdb
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\appsettings.Development.json
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\appsettings.json
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.exe
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.deps.json
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.runtimeconfig.json
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.runtimeconfig.dev.json
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.pdb
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.Views.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.Views.pdb
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\AutoMapper.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\EntityFramework.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+H:\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.Views.pdb
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.CopyComplete
+H:\Eshop Core\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.genruntimeconfig.cache
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ttsil.VERTITECH\Desktop\Eshop Core\EShop\EShop\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.StaticWebAssets.xml
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.exe
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.deps.json
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.runtimeconfig.json
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.runtimeconfig.dev.json
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.pdb
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.Views.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EShop.Views.pdb
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.AssemblyReference.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.Migrations.migration.resources
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.GenerateResource.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.AssemblyInfoInputs.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.AssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.CoreCompileInputs.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorAssemblyInfo.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\staticwebassets\EShop.StaticWebAssets.Manifest.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.TagHelpers.input.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.TagHelpers.output.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorCoreGenerate.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Customers\CustomerForm.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Create.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\OrderForm.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Products\ProductForm.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Login.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Register.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorTargetAssemblyInfo.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.RazorTargetAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.Views.pdb
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.CopyComplete
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.pdb
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop\obj\Debug\netcoreapp3.1\EShop.genruntimeconfig.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\EShop.StaticWebAssets.xml
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\EShop.exe
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\EShop.deps.json
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\EShop.runtimeconfig.json
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\EShop.runtimeconfig.dev.json
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\EShop.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\EShop.pdb
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\EShop.xml
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\EShop.Views.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\EShop.Views.pdb
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.AssemblyReference.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.Migrations.migration.resources
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.GenerateResource.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.AssemblyInfoInputs.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.AssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.CoreCompileInputs.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.RazorAssemblyInfo.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.RazorAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\staticwebassets\EShop.StaticWebAssets.Manifest.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.TagHelpers.input.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.TagHelpers.output.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.RazorCoreGenerate.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Customers\CustomerForm.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Create.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\OrderForm.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Products\ProductForm.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Login.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\Users\Register.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.RazorTargetAssemblyInfo.cache
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.RazorTargetAssemblyInfo.cs
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.Views.pdb
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.csproj.CopyComplete
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.dll
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.pdb
+C:\Users\ttsil.VERTITECH\Desktop\EShop\EShop Core\EShop\obj\Debug\netcoreapp3.1\EShop.genruntimeconfig.cache

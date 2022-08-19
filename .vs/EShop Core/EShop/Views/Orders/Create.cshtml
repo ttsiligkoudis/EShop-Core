@@ -1,0 +1,71 @@
+﻿@using EShop.Helpers
+@using EShop.ViewModels
+@model EShop.ViewModels.OrderViewModel
+@using ISession = EShop.Helpers.ISession
+@inject ISession Session
+@inject IUserAccess UserAccess
+@{
+    ViewBag.Title = "Create Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var customer = Session.GetCustomer();
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+<h2>@ViewBag.Title</h2>
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+@using (Html.BeginForm("Save", "Orders"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.ProductList)
+        <select asp-for="@Model.ProductList" class="form-control selectpicker" multiple asp-items="Model.Products.ConvertAll(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name })">
+            <option selected="selected" value="-1">Please select</option>
+        </select>
+        @Html.ValidationMessageFor(m => m.ProductList)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Order.Customer)
+
+        @if (UserAccess.IsCustomer(customer))
+        {
+            if (!UserAccess.IsAdmin(customer))
+            {
+                <p>@Model.Order.Customer?.Name</p>
+            }
+            else
+            {
+                <select asp-for="@Model.Order.CustomerId" class="form-control" asp-items="Model.Customers.ConvertAll(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name })">
+                    <option disabled selected value="-1">Please select</option>
+                </select>
+                @Html.ValidationMessageFor(m => m.Order.CustomerId)
+            }
+        }
+        else
+        {
+            <div class="form-group">
+                @Html.LabelFor(m => m.Order.Customer.Name)
+                @Html.TextBoxFor(m => m.Order.Customer.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Order.Customer.Name)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Order.Customer.City)
+                @Html.TextBoxFor(m => m.Order.Customer.City, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Order.Customer.City)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Order.Customer.Address)
+                @Html.TextBoxFor(m => m.Order.Customer.Address, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Order.Customer.Address)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Order.Customer.Email)
+                @Html.TextBoxFor(m => m.Order.Customer.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Order.Customer.Email)
+            </div>
+        }
+    </div>
+    @Html.HiddenFor(m => m.Order.CustomerId)
+    @Html.HiddenFor(m => m.Products)
+    <button type="submit" class="btn btn-primary">Save</button>
+}

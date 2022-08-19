@@ -1,0 +1,64 @@
+﻿@using EShop.Helpers
+@model IEnumerable<EShop.Models.ProductDto>
+@using ISession = EShop.Helpers.ISession
+@inject ISession Session
+@inject IUserAccess UserAccess
+@{
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var customer = Session.GetCustomer();
+}
+
+<h2>@ViewBag.Title</h2>
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+@if (UserAccess.IsAdmin(customer))
+{
+    @Html.ActionLink("Create", "Create", "Products", "", new { @class = "btn btn-primary" })
+}
+@if (!Model.Any())
+{
+    <p><br>You don't have any products registered yet!</p>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Color</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                @if (UserAccess.IsAdmin(customer))
+                {
+                    <th class="col-lg-1"></th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    @if (UserAccess.IsAdmin(customer))
+                    {
+                        <td>@Html.ActionLink(product.Name, "Edit", "Products", new { id = product.Id }, null)</td>
+                    }
+                    else
+                    {
+                        <td>@product.Name</td>
+                    }
+                    <td>@product.Category</td>
+                    <td>@product.Color</td>
+                    <td>@product.Price $</td>
+                    <td>@product.Quantity</td>
+                    @if (UserAccess.IsAdmin(customer))
+                    {
+                        <td>@Html.ActionLink("Delete", "Delete", "Products", new { id = product.Id }, new { @class = "btn btn-delete btn-primary", id = "btn-delete" })</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+

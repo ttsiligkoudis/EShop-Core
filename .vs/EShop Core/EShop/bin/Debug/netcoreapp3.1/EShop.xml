@@ -1,0 +1,395 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EShop</name>
+    </assembly>
+    <members>
+        <member name="M:EShop.Controllers.API.CustomersController.GetCustomers">
+            <summary>
+            Get a list of Customers
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.CustomersController.GetCustomer(System.Int32)">
+            <summary>
+            Get a specific customer by id
+            </summary>
+            <param name="id"> The customer's id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.CustomersController.GetCustomerByUserId(System.Int32)">
+            <summary>
+            Get a specific customer by user id
+            </summary>
+            <param name="id"> The customer's user id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.CustomersController.PutCustomer(System.Int32,EShop.Models.CustomerDto)">
+            <summary>
+            Update a specific customer
+            </summary>
+            <param name="id"> The customer's id</param>
+            <param name="customerDto"> The instance of the customer</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.CustomersController.PostCustomer(EShop.Models.CustomerDto)">
+            <summary>
+            Create a customer
+            </summary>
+            <param name="customerDto"> An instance of a customer</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.CustomersController.DeleteCustomer(System.Int32)">
+            <summary>
+            Delete a customer
+            </summary>
+            <param name="id"> The customer's id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.OrdersController.GetOrders">
+            <summary>
+            Get a list of orders
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.OrdersController.GetOrdersByCustomerId(System.Int32)">
+            <summary>
+            Get a list of orders for a specific customer
+            </summary>
+            <param name="id"> The customer's id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.OrdersController.GetOrder(System.Int32)">
+            <summary>
+            Get a specific order
+            </summary>
+            <param name="id"> The order's id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.OrdersController.GetOrderProducts(System.Int32)">
+            <summary>
+            Get a list of products from a specific order
+            </summary>
+            <param name="id"> The order's id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.OrdersController.GetOrderProductsByProductId(System.Int32)">
+            <summary>
+            Get a list of orders for a specific product
+            </summary>
+            <param name="id"> The product's id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.OrdersController.PostOrder(EShop.Models.OrderDto)">
+            <summary>
+            Create an order
+            </summary>
+            <param name="orderDto"> An instance of an order</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.OrdersController.PostOrderProducts(System.Int32,System.Collections.Generic.IEnumerable{EShop.Models.OrderProductsDto})">
+            <summary>
+            Insert the products of an order
+            </summary>
+            <param name="id"> The order's id</param>
+            <param name="orderProductsDto"> A list of products</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.OrdersController.PutOrder(System.Int32,EShop.Models.OrderDto)">
+            <summary>
+            Update an order
+            </summary>
+            <param name="id"> The order's id</param>
+            <param name="orderDto"> The order's instance</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.OrdersController.DeleteOrder(System.Int32)">
+            <summary>
+            Delete an order
+            </summary>
+            <param name="id"> The order's id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.ProductsController.GetProducts(System.Boolean)">
+            <summary>
+            Get a list of products
+            </summary>
+            <param name="checkQuantity"> Optional parameter to get only products with remaining quantity</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.ProductsController.GetProduct(System.Int32)">
+            <summary>
+            Get a specific product
+            </summary>
+            <param name="id"> The product's id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.ProductsController.PostProduct(EShop.Models.ProductDto)">
+            <summary>
+            Create a product
+            </summary>
+            <param name="productDto"> An instance of a product</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.ProductsController.PutProduct(System.Int32,EShop.Models.ProductDto)">
+            <summary>
+            Update a product
+            </summary>
+            <param name="id"> The product's id</param>
+            <param name="productDto"> The instance of the product</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.ProductsController.DeleteProduct(System.Int32)">
+            <summary>
+            Delete a product
+            </summary>
+            <param name="id"> The product's id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.UsersController.GetUsers">
+            <summary>
+            Get a list of users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.UsersController.GetUser(System.Int32)">
+            <summary>
+            Get a specific user
+            </summary>
+            <param name="id"> The user's id</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.UsersController.GetUserByEmailAndPassword(System.String,System.String)">
+            <summary>
+            Get a specific user by email and password
+            </summary>
+            <param name="email"> The user's email</param>
+            <param name="password"> The user's password</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.UsersController.GetUserByEmail(System.String)">
+            <summary>
+            Get a specific user by email
+            </summary>
+            <param name="email"> The user's email</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.UsersController.PostUser(EShop.Models.UserDto)">
+            <summary>
+            Create a user
+            </summary>
+            <param name="userDto"> An instance of a user</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.UsersController.Put(System.Int32,EShop.Models.UserDto)">
+            <summary>
+            Update a user
+            </summary>
+            <param name="id"> The user's id</param>
+            <param name="userDto"> The instance of the user</param>
+            <returns></returns>
+        </member>
+        <member name="M:EShop.Controllers.API.UsersController.Delete(System.Int32)">
+            <summary>
+            Delete a user
+            </summary>
+            <param name="id"> The user's id</param>
+            <returns></returns>
+        </member>
+        <member name="T:EShop.Models.CustomerDto">
+            <summary>
+            An instance of a customer
+            </summary>
+        </member>
+        <member name="P:EShop.Models.CustomerDto.Id">
+            <summary>
+            The id of the customer
+            </summary>
+        </member>
+        <member name="P:EShop.Models.CustomerDto.Name">
+            <summary>
+            The name of the customer
+            </summary>
+        </member>
+        <member name="P:EShop.Models.CustomerDto.City">
+            <summary>
+            The city of the customer
+            </summary>
+        </member>
+        <member name="P:EShop.Models.CustomerDto.Address">
+            <summary>
+            The address of the customer
+            </summary>
+        </member>
+        <member name="P:EShop.Models.CustomerDto.Email">
+            <summary>
+            The email address of the customer
+            </summary>
+        </member>
+        <member name="P:EShop.Models.CustomerDto.RegDate">
+            <summary>
+            The registration date of the customer
+            </summary>
+        </member>
+        <member name="P:EShop.Models.CustomerDto.UserId">
+            <summary>
+            The user's id that the customer may have
+            </summary>
+        </member>
+        <member name="T:EShop.Models.OrderDto">
+            <summary>
+            An instance of an order
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderDto.Id">
+            <summary>
+            The id of the order
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderDto.CustomerName">
+            <summary>
+            The customer's name of the order
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderDto.Customer">
+            <summary>
+            The customer instance it self
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderDto.CustomerId">
+            <summary>
+            The customer's id that the order is connected to 
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderDto.FinalPrice">
+            <summary>
+            The final price of the order
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderDto.OrderDate">
+            <summary>
+            The date that the order was placed
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderDto.Completed">
+            <summary>
+            The state of the order
+            </summary>
+        </member>
+        <member name="T:EShop.Models.OrderProductsDto">
+            <summary>
+            The products that an order is connected to
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderProductsDto.Id">
+            <summary>
+            The id of the orderProduct instance
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderProductsDto.OrderId">
+            <summary>
+            The id of the order
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderProductsDto.ProductName">
+            <summary>
+            The product's name
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderProductsDto.ProductCategory">
+            <summary>
+            The product's category
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderProductsDto.ProductId">
+            <summary>
+            The product's id
+            </summary>
+        </member>
+        <member name="P:EShop.Models.OrderProductsDto.ProductPrice">
+            <summary>
+            the product's price
+            </summary>
+        </member>
+        <member name="T:EShop.Models.ProductDto">
+            <summary>
+            An instance of a product
+            </summary>
+        </member>
+        <member name="P:EShop.Models.ProductDto.Id">
+            <summary>
+            The id of the product
+            </summary>
+        </member>
+        <member name="P:EShop.Models.ProductDto.Name">
+            <summary>
+            The description of the product
+            </summary>
+        </member>
+        <member name="P:EShop.Models.ProductDto.Category">
+            <summary>
+            The category of the product
+            </summary>
+        </member>
+        <member name="P:EShop.Models.ProductDto.Color">
+            <summary>
+            The color of the product
+            </summary>
+        </member>
+        <member name="P:EShop.Models.ProductDto.Price">
+            <summary>
+            The price of the product
+            </summary>
+        </member>
+        <member name="P:EShop.Models.ProductDto.Quantity">
+            <summary>
+            The remaining quantity of the product
+            </summary>
+        </member>
+        <member name="T:EShop.Models.UserDto">
+            <summary>
+            An instance of a user
+            </summary>
+        </member>
+        <member name="P:EShop.Models.UserDto.Id">
+            <summary>
+            The id of the user
+            </summary>
+        </member>
+        <member name="P:EShop.Models.UserDto.Email">
+            <summary>
+            The email address of the user
+            </summary>
+        </member>
+        <member name="P:EShop.Models.UserDto.Password">
+            <summary>
+            The password of the user
+            </summary>
+        </member>
+        <member name="P:EShop.Models.UserDto.UserType">
+            <summary>
+            The type of the user
+            </summary>
+        </member>
+        <member name="P:EShop.Models.UserDto.RegDate">
+            <summary>
+            The registration date of the user
+            </summary>
+        </member>
+        <member name="P:EShop.Models.UserDto.LoginDate">
+            <summary>
+            The last date the user logged in
+            </summary>
+        </member>
+        <member name="T:EShop.ViewModels.UserType">
+            <summary>
+            The users' types {Admin = 1, User = 2}
+            </summary>
+        </member>
+        <member name="T:EShop.ViewModels.Category">
+            <summary>
+            The products' categories {Lips = 1, Eyes = 2, Body = 3, Face = 4}
+            </summary>
+        </member>
+    </members>
+</doc>
