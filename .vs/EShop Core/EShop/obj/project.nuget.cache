@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RirxqxveywgiMQrME8WsaOlupgpNubNoU6hgVenbGCt09Ufs1PMG18T1O4c+mApdfHHTwnB16ryjCWeBxGq9eg==",
+  "dgSpecHash": "vNECn5aicqMjFJDfzMW2AlxoPHaHNeLpvBJvicaK0D+9heWOOVrBQ0qb81AnTeXq3rlK/4hTRvupqbiEcjgs+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ttsil.VERTITECH\\Desktop\\EShop\\EShop Core\\EShop\\EShop.csproj",
+  "projectFilePath": "C:\\Users\\ttsil.VERTITECH\\Documents\\GitHub\\EShop-Core\\.vs\\EShop Core\\EShop\\EShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ttsil.VERTITECH\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\ttsil.VERTITECH\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
