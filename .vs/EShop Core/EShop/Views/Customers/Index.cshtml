@@ -12,7 +12,7 @@
 }
 else
 {
-    <table class="table table-bordered">
+    <table id="datatable" class="table table-bordered">
         <thead>
             <tr>
                 <th>@Html.DisplayNameFor(Model => Model.Name)</th>
@@ -39,4 +39,9 @@ else
     </table>
 }
 
+<script>
+    $(document).ready(function () {
+        $('#datatable').DataTable();
+    });
+</script>
 

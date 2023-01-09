@@ -1,0 +1,63 @@
+﻿<div id="calendar" class="fc fullcalendar-event-colors fc-ltr fc-unthemed"></div>
+
+<link href="~/css/fullcalendar420/core/main.css" rel="stylesheet" />
+<link href='~/css/fullcalendar420/daygrid/main.css' rel='stylesheet' />
+<link href='~/css/fullcalendar420/timegrid/main.css' rel='stylesheet' />
+<link href='~/css/fullcalendar420/list/main.css' rel='stylesheet' />
+<link href='~/css/fullcalendar420/timeline/main.css' rel='stylesheet' />
+
+<script src="~/js/fullcalendar420/core/main.js"></script>
+<script src='~/js/fullcalendar420/interaction/main.js'></script>
+<script src='~/js/fullcalendar420/daygrid/main.js'></script>
+<script src='~/js/fullcalendar420/timegrid/main.js'></script>
+<script src='~/js/fullcalendar420/list/main.js'></script>
+<script src='~/js/fullcalendar420/timeline/main.js'></script>
+<script src='~/js/fullcalendar420/core/locales-all.js'></script>
+
+<style>
+    #calendar {
+        max-width: 600px;
+    }
+
+    .fc-event {
+        color: black !important;
+    }
+</style>
+
+<script>
+    $.ajax({
+        url: '@Url.Action("GetCalendar", "Home")',
+        type: 'POST',
+        async: false,
+        success: function (data) {
+            obj = JSON.stringify(data);
+        },
+        error: function (xhr, err) {
+            alert("readyState: " + xhr.readyState + "\nstatus: " + xhr.status);
+            alert("responseText: " + xhr.responseText);
+        }   
+    });
+    var headerButtons = 'timeGridDay,timeGridWeek,dayGridMonth';
+    document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+        if (calendarEl != null) {
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['dayGrid', 'timeGrid', 'list', 'interaction'],
+                events: JSON.parse(obj),
+                initialView: 'dayGridMonth',
+                header: {
+                    left: 'today prev,next',
+                    center: 'title',
+                    right: headerButtons
+                },
+                views: {
+                    resourceTimeGridDay: {
+                        type: 'resourceTimeGrid',
+                        duration: { days: 1 }
+                    }
+                }
+            });
+            calendar.render();
+        }
+    });
+</script>

@@ -21,7 +21,7 @@
 }
 else
 {
-    <table class="table table-bordered table-hover">
+    <table id="datatable" class="table table-bordered table-hover">
         <thead>
             <tr>
                 <th>Product</th>
@@ -61,4 +61,8 @@ else
     </table>
 }
 
-
+<script>
+    $(document).ready(function () {
+        $('#datatable').DataTable();
+    });
+</script>

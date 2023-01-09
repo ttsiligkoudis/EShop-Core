@@ -1,13 +1,36 @@
-﻿@{
+﻿@using EShop.Helpers
+@using ISession = EShop.Helpers.ISession
+@inject ISession Session
+@inject IUserAccess UserAccess
+@{
+    var customer = Session.GetCustomer();
     ViewBag.Title = "Home Page";
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
+<br />
+@if (!UserAccess.IsCustomer(customer))
+{
+    <div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
+}
+else
+{
+    <div>
+        <div class="col-md-6">@Html.Partial("_Calendar")</div>
+        @*<partial name="Shared/_Calendar.cshtml" />*@
+        <div class="col-md-6">
+            <div><br /><br /></div>
+            <div class="jumbotron">
+                <h1>ASP.NET</h1>
+                <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+                <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12"></div>   
+}
 <div class="row">
     <div class="col-md-4">
         <h2>Getting started</h2>
@@ -29,3 +52,4 @@
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
+
