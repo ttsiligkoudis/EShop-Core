@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\github\EShop-Core\EShop\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2023-02-08T11:21:49.6199286Z;True|2023-02-08T13:12:21.9437263+02:00;True|2023-02-08T13:10:51.8816246+02:00;True|2023-02-08T12:02:59.7743796+02:00;True|2023-02-08T11:59:10.8041926+02:00;True|2023-02-07T15:18:14.5850607+02:00;True|2023-02-07T13:50:38.8460874+02:00;True|2023-02-06T22:13:00.3202094+02:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

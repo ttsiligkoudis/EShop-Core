@@ -1,4 +1,4 @@
-﻿using EShop.Models;
+﻿using DataModels;
 
 namespace EShop.Helpers
 {

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<EShop.Models.OrderDto>
+﻿@model IEnumerable<DataModels.Dtos.OrderDto>
 
 @{
     ViewBag.Title = "Order";
@@ -9,11 +9,7 @@
 
 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 @Html.ActionLink("Create", "Create", "Orders", "", new { @class = "btn btn-primary" })
-@if (!Model.Any())
-{
-    <p><br>You don't have any orders registered yet!</p>
-}
-else
+@if (Model != null && Model.Any())
 {
     <table id="datatable" class="table table-bordered table-hover">
         <thead>
@@ -40,6 +36,10 @@ else
             }
         </tbody>
     </table>
+}
+else
+{
+    <p><br>You don't have any orders registered yet!</p>
 }
 
 <script>

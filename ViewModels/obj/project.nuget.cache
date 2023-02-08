@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "d46/toffAfPRfdUG9bIHsl2VDB5icIfuvqwl+dqWhDsB+D3aHa9Ea7DdVpxR1HqJgi8K1oKR7ps5slX9z07oIw==",
+  "success": true,
+  "projectFilePath": "C:\\github\\EShop-Core\\ViewModels\\ViewModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ThemisTsiligkoudis\\.nuget\\packages\\newtonsoft.json\\13.0.3-beta1\\newtonsoft.json.13.0.3-beta1.nupkg.sha512"
+  ],
+  "logs": []
+}

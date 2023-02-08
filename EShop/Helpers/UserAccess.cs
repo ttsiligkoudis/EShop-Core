@@ -1,5 +1,5 @@
-﻿using EShop.Models;
-using EShop.ViewModels;
+﻿using DataModels;
+using Enums;
 
 namespace EShop.Helpers
 {

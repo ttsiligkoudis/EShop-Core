@@ -1,5 +1,5 @@
 ﻿@using EShop.Helpers
-@model IEnumerable<EShop.Models.ProductDto>
+@model IEnumerable<DataModels.Dtos.ProductDto>
 @using ISession = EShop.Helpers.ISession
 @inject ISession Session
 @inject IUserAccess UserAccess
@@ -15,11 +15,7 @@
 {
     @Html.ActionLink("Create", "Create", "Products", "", new { @class = "btn btn-primary" })
 }
-@if (!Model.Any())
-{
-    <p><br>You don't have any products registered yet!</p>
-}
-else
+@if (Model != null && Model.Any())
 {
     <table id="datatable" class="table table-bordered table-hover">
         <thead>
@@ -59,6 +55,10 @@ else
             }
         </tbody>
     </table>
+}
+else
+{
+    <p><br>You don't have any products registered yet!</p>
 }
 
 <script>

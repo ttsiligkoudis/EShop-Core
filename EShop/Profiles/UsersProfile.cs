@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using EShop.Models;
+using DataModels;
+using DataModels.Dtos;
 
 namespace EShop.Profiles
 {

@@ -1,0 +1,405 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\Site.css",
+      "PackagePath": "staticwebassets\\css\\Site.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\fullcalendar420\\core\\main.css",
+      "PackagePath": "staticwebassets\\css\\fullcalendar420\\core\\main.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\fullcalendar420\\core\\main.min.css",
+      "PackagePath": "staticwebassets\\css\\fullcalendar420\\core\\main.min.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\fullcalendar420\\daygrid\\main.css",
+      "PackagePath": "staticwebassets\\css\\fullcalendar420\\daygrid\\main.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\fullcalendar420\\daygrid\\main.min.css",
+      "PackagePath": "staticwebassets\\css\\fullcalendar420\\daygrid\\main.min.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\fullcalendar420\\list\\main.css",
+      "PackagePath": "staticwebassets\\css\\fullcalendar420\\list\\main.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\fullcalendar420\\list\\main.min.css",
+      "PackagePath": "staticwebassets\\css\\fullcalendar420\\list\\main.min.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\fullcalendar420\\timegrid\\main.css",
+      "PackagePath": "staticwebassets\\css\\fullcalendar420\\timegrid\\main.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\fullcalendar420\\timegrid\\main.min.css",
+      "PackagePath": "staticwebassets\\css\\fullcalendar420\\timegrid\\main.min.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\fullcalendar420\\timeline\\main.css",
+      "PackagePath": "staticwebassets\\css\\fullcalendar420\\timeline\\main.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\fullcalendar420\\timeline\\main.min.css",
+      "PackagePath": "staticwebassets\\css\\fullcalendar420\\timeline\\main.min.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales-all.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales-all.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales-all.min.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales-all.min.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\af.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\af.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ar-dz.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ar-dz.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ar-kw.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ar-kw.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ar-ly.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ar-ly.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ar-ma.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ar-ma.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ar-sa.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ar-sa.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ar-tn.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ar-tn.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ar.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ar.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\bg.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\bg.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\bs.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\bs.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ca.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ca.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\cs.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\cs.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\da.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\da.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\de.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\de.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\el.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\el.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\en-au.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\en-au.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\en-gb.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\en-gb.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\en-nz.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\en-nz.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\es-us.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\es-us.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\es.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\es.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\et.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\et.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\eu.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\eu.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\fa.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\fa.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\fi.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\fi.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\fr-ca.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\fr-ca.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\fr-ch.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\fr-ch.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\fr.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\fr.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\gl.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\gl.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\he.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\he.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\hi.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\hi.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\hr.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\hr.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\hu.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\hu.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\id.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\id.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\is.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\is.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\it.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\it.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ja.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ja.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ka.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ka.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\kk.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\kk.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ko.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ko.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\lb.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\lb.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\lt.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\lt.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\lv.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\lv.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\mk.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\mk.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ms.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ms.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\nb.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\nb.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\nl.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\nl.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\nn.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\nn.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\pl.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\pl.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\pt-br.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\pt-br.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\pt.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\pt.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ro.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ro.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\ru.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\ru.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\sk.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\sk.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\sl.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\sl.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\sq.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\sq.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\sr-cyrl.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\sr-cyrl.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\sr.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\sr.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\sv.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\sv.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\th.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\th.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\tr.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\tr.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\uk.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\uk.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\vi.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\vi.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\zh-cn.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\zh-cn.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales\\zh-tw.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\locales\\zh-tw.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\main.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\main.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\main.min.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\core\\main.min.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\daygrid\\main.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\daygrid\\main.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\daygrid\\main.min.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\daygrid\\main.min.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\interaction\\main.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\interaction\\main.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\interaction\\main.min.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\interaction\\main.min.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\list\\main.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\list\\main.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\list\\main.min.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\list\\main.min.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\list\\mainDescending.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\list\\mainDescending.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\timegrid\\main.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\timegrid\\main.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\timegrid\\main.min.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\timegrid\\main.min.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\timeline\\main.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\timeline\\main.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\timeline\\main.min.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar420\\timeline\\main.min.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.EShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.EShop.props",
+      "PackagePath": "build\\EShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.EShop.props",
+      "PackagePath": "buildMultiTargeting\\EShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.EShop.props",
+      "PackagePath": "buildTransitive\\EShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

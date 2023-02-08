@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
-using EShop.Models;
-using Microsoft.AspNetCore.Routing.Constraints;
-using Microsoft.CodeAnalysis;
+using DataModels;
+using DataModels.Dtos;
 
 namespace EShop.Profiles
 {
