@@ -9,6 +9,7 @@ namespace Client
         public Client<ProductDto> ProductClient { get; set; }
         public Client<UserDto> UserClient { get; set; }
         public Client<OrderProductsDto> OrderProductClient { get; set; }
+        public Client<ProductRatesDto> ProductRatesClient { get; set; }
 
         public ClientHelper()
         {
@@ -17,6 +18,7 @@ namespace Client
             ProductClient = new Client<ProductDto>();
             UserClient = new Client<UserDto>();
             OrderProductClient = new Client<OrderProductsDto>();
+            ProductRatesClient = new Client<ProductRatesDto>();
         }
 
         public void Dispose()
@@ -26,6 +28,7 @@ namespace Client
             ProductClient.Dispose();
             UserClient.Dispose();
             OrderProductClient.Dispose();
+            ProductRatesClient.Dispose();
         }
     }
 }

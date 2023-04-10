@@ -20,7 +20,7 @@
     <div class="form-group">
         @Html.LabelFor(m => m.ProductList)
         <select asp-for="@Model.ProductList" class="form-control selectpicker" multiple asp-items="Model.Products.ConvertAll(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name })">
-            <option selected="selected" value="-1">Please select</option>
+            <option disabled value="">Please select</option>
         </select>
         @Html.ValidationMessageFor(m => m.ProductList)
     </div>
@@ -36,7 +36,7 @@
             else
             {
                 <select asp-for="@Model.Order.CustomerId" class="form-control" asp-items="Model.Customers.ConvertAll(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name })">
-                    <option disabled selected value="-1">Please select</option>
+                    <option disabled value="">Please select</option>
                 </select>
                 @Html.ValidationMessageFor(m => m.Order.CustomerId)
             }

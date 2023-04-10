@@ -1,71 +1,93 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using Client;
+using AutoMapper;
+using DataModels.Dtos;
+using Enums;
+using EShop.Helpers;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using ViewModels;
+using ViewModels.helpers;
+using ISession = EShop.Helpers.ISession;
 
 namespace EShop.Controllers
 {
-    public class ProductsController : Controller
+    public class ProductsController : BaseController
     {
-        private ClientHelper _client;
-
-        public ProductsController()
+        public ProductsController(IUserAccess userAccess, ISession session, IMapper mapper) : base(userAccess, session, mapper)
         {
-            _client = new ClientHelper();
         }
 
-        protected override void Dispose(bool disposing)
+        public async Task<IActionResult> AdminIndex(Category? category = null)
         {
-            if (disposing)
-            {
-                if (_client != null)
-                {
-                    _client.Dispose();
-                    _client = null;
-                }
-            }
+            var str = "Products" + (category.HasValue ? "/?category=" + category.Value.ToString() : "");
+            var products = await _client.ProductClient.GetListAsync(str);
+            return View(products);
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(short id)
         {
-            var products = await _client.ProductClient.GetListAsync("Products");
+            var str = "Products";
+            if (Enum.TryParse<Category>(id.ToString(), out var category))
+                str += "/?category=" + category.ToString();
+            var products = await _client.ProductClient.GetListAsync(str);
             return View(products);
         }
 
         public IActionResult Create()
         {
-            var viewModel = new ProductViewModel();
-            return View("ProductForm", viewModel);
+            var product = new ProductDto();
+            return View("ProductForm", product);
         }
 
         public async Task<IActionResult> Edit(int id)
         {
             var product = await _client.ProductClient.GetAsync("Products/" + id);
-            if (product == null) return RedirectToAction("Index", "Products");
+            if (product == null) return RedirectToAction("AdminIndex", "Products");
 
-            var viewModel = new ProductViewModel
+            return View("ProductForm", product);
+        }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            var product = await _client.ProductClient.GetAsync("Products/" + id);
+            if (product == null) return RedirectToAction("Index", "Products");
+            var vm = new ProductViewModel
             {
                 Product = product,
-                Price = product.Price
+                Rates = (await _client.ProductRatesClient.GetListAsync("Products/Rates/" + id) ?? new List<ProductRatesDto>()).ToList()
             };
-            return View("ProductForm", viewModel);
+
+            var cardProducts = _session.GetProducts();
+            ViewBag.ProductExistsInCart = cardProducts != null && cardProducts.Any(w => w.Id == id);
+
+            return View("Details", vm);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Save(ProductViewModel viewModel)
+        public async Task<IActionResult> Save(ProductDto product, IFormFile Image)
         {
-            if (viewModel.Price != null) viewModel.Product.Price = (float)viewModel.Price;
-            if (!ModelState.IsValid) return View("ProductForm", viewModel);
-            if (viewModel.Product.Id == 0)
+            //using (var stream = new MemoryStream())
+            //{
+            //    await Image.CopyToAsync(stream);
+            //    product.Image = stream.ToArray();
+            //}
+
+            if (Image != null)
             {
-                viewModel.Product = await _client.ProductClient.PostAsync(viewModel.Product, "Products");
+                var gDrive = new GoogleDrive();
+                //product.Image = await gDrive.UploadFile(Image, product.Category);
             }
+
+            if (product.Id == 0)
+                await _client.ProductClient.PostAsync(product, "Products");
             else
-            {
-                viewModel.Product = await _client.ProductClient.PutAsync(viewModel.Product, "Products/" + viewModel.Product.Id);
-            }
-            return RedirectToAction("Index", "Products");
+                await _client.ProductClient.PutAsync(product, "Products/" + product.Id);
+
+            return RedirectToAction("AdminIndex");
         }
 
         public async Task<IActionResult> Delete(int id)
@@ -77,11 +99,158 @@ namespace EShop.Controllers
                 if (orderProducts != null && orderProducts.Any())
                 {
                     ModelState.AddModelError("", @"Cannot delete a product that is already ordered");
-                    return View("Index", await _client.ProductClient.GetListAsync("Products"));
+                    return View("AdminIndex", await _client.ProductClient.GetListAsync("Products"));
                 }
                 await _client.ProductClient.DeleteAsync(id, "Products/" + id);
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("AdminIndex");
+        }
+
+        public async Task<List<ProductDto>> AddToCart(bool add, int quantity, int id)
+        {
+            if (id == 0)
+                return null;
+
+            var products = _session.GetProducts();
+
+            ProductDto product = null;
+            var cartExists = products != null && products.Any();
+
+            if (cartExists)
+                product = products.Where(w => w.Id == id).FirstOrDefault();
+
+            var productExistsInCart = product != null;
+
+            product ??= await _client.ProductClient.GetAsync("Products/" + id);
+
+            if (product == null)
+                return null;
+
+            product.Quantity = quantity;
+
+            if (add)
+            {
+                if (cartExists && !productExistsInCart)
+                {
+                    products.Add(product);
+                }
+                else if (!cartExists)
+                {
+                    products = new List<ProductDto>()
+                    {
+                        product
+                    };
+                }
+            }
+            else
+            {
+                if (cartExists && productExistsInCart)
+                {
+                    products.Remove(product);
+                }
+            }
+
+            HttpContext.Session.SetString("Products", JsonConvert.SerializeObject(products));
+            return products;
+        }
+
+        public async Task<IActionResult> GetRate(int productId, int customerId)
+        {
+            if (productId == 0 || customerId == 0)
+            {
+                return null;
+            }
+
+            var rate = await _client.ProductRatesClient.GetAsync($"Products/Rate/?productId={productId}&customerId={customerId}");
+
+            return new JsonResult(rate);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SaveRate(ProductRatesDto rateDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return null;
+            }
+
+            if (rateDto.Id == 0)
+            {
+                rateDto = await _client.ProductRatesClient.PostAsync(rateDto, "Products/Rate");
+            }
+            else
+            {
+                rateDto = await _client.ProductRatesClient.PutAsync(rateDto, $"Products/Rate/{rateDto.Id}");
+            }
+
+            return new JsonResult(rateDto);
+        }
+
+        [HttpPost]
+        public ContentResult Filter(ProductsFilterHelper helper)
+        {
+            List<ProductDto> results = helper.products;
+            helper.pageNumber = (short)(helper.pageNumber > 0 ? helper.pageNumber - 1 : 0);
+            var skip = helper.pageNumber * (short)helper.pageSize;
+            var take = (int)helper.pageSize;
+            Func<ProductDto, bool> wherePredicate = null;
+
+            Func<ProductDto, object> orderPredicate = o => helper.orderBy switch
+            {
+                OrderBy.Price => o.Price,
+                OrderBy.Quantity => o.Quantity,
+                OrderBy.Rate => o.Rate,
+                _ => o.Name
+            };
+
+            if (!string.IsNullOrEmpty(helper.keyWord))
+            {
+                var search = helper.keyWord.Trim();
+                wherePredicate = w => w.Name.IndexOf(search, StringComparison.OrdinalIgnoreCase) != -1
+                    //|| w.Description.IndexOf(search, StringComparison.OrdinalIgnoreCase) != -1
+                    || (w.Quantity ?? 0).ToString().IndexOf(search, StringComparison.OrdinalIgnoreCase) != -1
+                    || w.Price.ToString().IndexOf(search, StringComparison.OrdinalIgnoreCase) != -1
+                    || (w.Rate ?? 0).ToString().IndexOf(search, StringComparison.OrdinalIgnoreCase) != -1;
+            }
+
+            if (wherePredicate != null)
+            {
+                results = helper.products
+                .Where(wherePredicate)
+                .ToList();
+            }
+
+            if (helper.orderType == OrderType.Descending)
+                results = results.OrderByDescending(orderPredicate).ToList();
+            else
+                results = results.OrderBy(orderPredicate).ToList();
+
+
+            var vm = new ProductsFullViewModel
+            {
+                totalCount = helper.products.Count,
+                filteredCount = results.Count,
+                pages = (results.Count / (short)helper.pageSize) + (results.Count % (short)helper.pageSize > 0 ? 1 : 0),
+                products = results.Skip(skip).Take(take).ToList()
+            };
+
+            return SerializeJSON(vm);
+        }
+
+        public IActionResult CardView(List<ProductDto> products)
+        {
+            return PartialView("_CardView", products);
+        }
+
+        private ContentResult SerializeJSON(object obj)
+        {
+            var data = JsonConvert.SerializeObject(obj);
+            var result = new ContentResult
+            {
+                Content = data,
+                ContentType = "application/json"
+            };
+            return result;
         }
     }
 }

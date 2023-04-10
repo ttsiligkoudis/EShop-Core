@@ -1,68 +1,176 @@
-﻿@using EShop.Helpers
-@model IEnumerable<DataModels.Dtos.ProductDto>
-@using ISession = EShop.Helpers.ISession
-@inject ISession Session
-@inject IUserAccess UserAccess
+﻿@using Enums
+@model List<DataModels.Dtos.ProductDto>;
+
 @{
-    ViewBag.Title = "Product";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-    var customer = Session.GetCustomer();
+    var pageSizeSelect = (from d in Enum.GetValues(typeof(PageSize)).Cast<PageSize>()
+                          select new SelectListItem()
+                                  {
+                                      Value = Convert.ToInt16(d).ToString(),
+                                      Text = d.ToString(),
+                                      Selected = d == PageSize.Ten
+                                  }).ToList();
+
+    var orderBySelect = (from d in Enum.GetValues(typeof(OrderBy)).Cast<OrderBy>()
+                         select new SelectListItem()
+                                 {
+                                     Value = Convert.ToInt16(d).ToString(),
+                                     Text = d.ToString(),
+                                     Selected = d == OrderBy.Name
+                                 }).ToList();
+
+    var orderTypeSelect = (from d in Enum.GetValues(typeof(OrderType)).Cast<OrderType>()
+                      select new SelectListItem()
+                              {
+                                  Value = Convert.ToInt16(d).ToString(),
+                                  Text = d.ToString(),
+                                  Selected = d == OrderType.Ascending
+                              }).ToList();
 }
 
-<h2>@ViewBag.Title</h2>
-@Html.ValidationSummary(true, "", new { @class = "text-danger" })
-@if (UserAccess.IsAdmin(customer))
-{
-    @Html.ActionLink("Create", "Create", "Products", "", new { @class = "btn btn-primary" })
-}
-@if (Model != null && Model.Any())
-{
-    <table id="datatable" class="table table-bordered table-hover">
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Category</th>
-                <th>Color</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                @if (UserAccess.IsAdmin(customer))
-                {
-                    <th class="col-lg-1"></th>
-                }
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var product in Model)
-            {
-                <tr>
-                    @if (UserAccess.IsAdmin(customer))
+<style>
+    .centered {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    #loading {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .spinner-border {
+        width: 3rem;
+        height: 3rem;
+    }
+
+</style>
+
+<div class="container">
+    <div id="loading" style="display:none;">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <h2 class="text-center">Featured Products</h2>
+    <div class="centered row my-10 mx-auto">
+        <div class="offset-md-1 col-md-2">
+            <div class="form-group">
+                <label for="page-size-select">Page Size:</label>
+                <select class="form-control" id="page-size-select">
+                    @foreach (var item in pageSizeSelect)
                     {
-                        <td>@Html.ActionLink(product.Name, "Edit", "Products", new { id = product.Id }, null)</td>
+                        <option value="@item.Value" selected="@item.Selected">@item.Value</option>
                     }
-                    else
+                </select>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="search-input">Search:</label>
+                <input type="text" class="form-control" id="search-input" placeholder="Enter keyword">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="order-by-select">Order By:</label>
+                <select class="form-control" id="order-by-select">
+                    @foreach (var item in orderBySelect)
                     {
-                        <td>@product.Name</td>
+                        <option value="@item.Value" selected="@item.Selected">@item.Text</option>
                     }
-                    <td>@product.Category</td>
-                    <td>@product.Color</td>
-                    <td>@product.Price $</td>
-                    <td>@product.Quantity</td>
-                    @if (UserAccess.IsAdmin(customer))
+                </select>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="order-type-select">Order Type:</label>
+                <select class="form-control" id="order-type-select">
+                    @foreach (var item in orderTypeSelect)
                     {
-                        <td>@Html.ActionLink("Delete", "Delete", "Products", new { id = product.Id }, new { @class = "btn btn-delete btn-primary", id = "btn-delete" })</td>
+                        <option value="@item.Value" selected="@item.Selected">@item.Text</option>
                     }
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-else
-{
-    <p><br>You don't have any products registered yet!</p>
-}
+                </select>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group" style="float:right">
+                <label for="searchBtn"></label>
+                <button id="searchBtn" type="button" class="btn btn-primary" style="display:block" value="1">Search</button>
+            </div>
+        </div>
+    </div>
+    <div id="productsDIV" class="row"></div>
+    <div id="pagesDIV" style="float:right; margin: 10px 0"></div>
+</div>
 
 <script>
-    $(document).ready(function () {
-        $('#datatable').DataTable();
-    });
+    var products = @Json.Serialize(Model);
+    var helper = {};
+    var pages;
+
+    function getHelper (){
+        helper = {
+            pageSize: $('#page-size-select').val(),
+            keyWord: $('#search-input').val(),
+            orderBy: $('#order-by-select').val(),
+            orderType: $('#order-type-select').val(),
+            products: products
+        };
+    }
+
+    function showPages(pages) {
+        var div = $('#pagesDIV');
+        div.html('');
+        for (let i = 1; i <= pages; i++){
+            div.append(`<button type="button" value="${i}" class="btn btn-secondary pageBtn">${i}</button>`);
+            div.append('&nbsp;');
+        }
+        getCardView();
+    }
+
+    function getCardView() {
+        $('#searchBtn, .pageBtn').click(function () {
+            getHelper();
+            helper.pageNumber = Number($(this).val());
+
+            $.ajax({
+                url: '@Url.Action("Filter", "Products")',
+                type: 'POST',
+                dataType: 'json',
+                beforeSend: loader(true),
+                data: { helper: helper },
+                success: function (data) {
+                    $('#productsDIV').load('@Url.Action("CardView", "Products")', 
+                        { products: data.products }, 
+                            function () {
+                                pages = data.pages;
+                                showPages(data.pages);
+                                loader(false);
+                    });
+                }
+            });
+        });
+    }
+
+    function loader(show) {
+        if(show)
+            $("#loading").show();
+        else
+            $("#loading").hide();
+    }
+
+    //$(document).ready(function () {
+        getCardView();
+        $('#searchBtn').click();
+    //});
+    
 </script>

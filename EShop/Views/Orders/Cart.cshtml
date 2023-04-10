@@ -1,0 +1,225 @@
+﻿@model ViewModels.FinalOrderViewModel
+@using ISession = EShop.Helpers.ISession
+@using DataModels
+@inject ISession Session
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    decimal total = 0;
+    var newCustomer = (bool)ViewBag.NewCustomer;
+    var hasProducts = Model.CartProducts != null && Model.CartProducts.Any();
+}
+
+<style>
+    .center {
+        width: 350px;
+        margin: 0 auto;
+    }
+</style>
+
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Cart Products</button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Order Details</button>
+    </div>
+</nav>
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        @if (!hasProducts)
+        {
+            <p><br>You don't have any products in cart yet!</p>
+        }
+        else
+        {
+            @foreach (var product in Model.CartProducts)
+            {
+                total += product.Price * product.Quantity ?? 0;
+                <div class="row border p-2 m-2 rounded justify-content-center align-items-center" style="background-color: white;">
+                    <div class="col-3">
+                        <div class="justify-content-center align-items-center">
+                            <a href="@Url.Action("Details","Products", new { id = product.Id })"><img class="card-img-top" style="max-width:200px; max-height:150px" src="@product.Image" /></a>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <h4>@product.Name</h4>
+                        <p>@product.Description</p>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <p>Price: @product.Quantity X @product.Price <i class="fa-solid fa-euro-sign"></i></p>
+                            </div>
+                            <div class="col-sm-3">
+                                <button class="btn btn-danger btnDelete" data-code="@product.Id" data-quantity="@product.Quantity">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="card mt-4 align-items-center rounded" style="width:250px; margin-left:auto; margin-right:0.5rem">
+                    <div class="card-body">
+                        <h5 class="card-title">Cart Total</h5>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Total</th>
+                                    <td>@total <i class="fa-solid fa-euro-sign"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button id="proceed" class="btn btn-primary btn-block">Proceed with Order</button>
+                    </div>
+                </div>
+        }
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <form id="orderForm">
+            <div class="center">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.RegisterVM.Customer.Name, new { @class = "control-label" })
+                    @if (newCustomer)
+                    {
+                        @Html.TextBoxFor(m => m.RegisterVM.Customer.Name, new { @class = "form-control" })
+                    }
+                    else
+                    {
+                        @Html.TextBoxFor(m => m.RegisterVM.Customer.Name, new { @class = "form-control", disabled = "" })
+                    }
+                    @Html.ValidationMessageFor( m => m.RegisterVM.Customer.Name, "", new { @class = "text-danger valMessage" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.RegisterVM.Customer.City, new { @class = "control-label" })
+                    @if (newCustomer)
+                    {
+                        @Html.TextBoxFor(m => m.RegisterVM.Customer.City, new { @class = "form-control" })
+                    }
+                    else
+                    {
+                        @Html.TextBoxFor(m => m.RegisterVM.Customer.City, new { @class = "form-control", disabled = "" })
+                    }
+                    @Html.ValidationMessageFor(m => m.RegisterVM.Customer.City, "", new { @class = "text-danger valMessage" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.RegisterVM.Customer.Address, new { @class = "control-label" })
+                    @if (newCustomer)
+                    {
+                        @Html.TextBoxFor(m => m.RegisterVM.Customer.Address, new { @class = "form-control" })
+                    }
+                    else
+                    {
+                        @Html.TextBoxFor(m => m.RegisterVM.Customer.Address, new { @class = "form-control", disabled = "" })
+                    }
+                    @Html.ValidationMessageFor(m => m.RegisterVM.Customer.Address, "", new { @class = "text-danger valMessage" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.RegisterVM.Email, new { @class = "control-label" })
+                    @if (newCustomer)
+                    {
+                        @Html.TextBoxFor(m => m.RegisterVM.Email, new { @class = "form-control" })
+                    }
+                    else
+                    {
+                        @Html.TextBoxFor(m => m.RegisterVM.Email, new { @class = "form-control", disabled = "" })
+                    }
+                    @Html.ValidationMessageFor(m => m.RegisterVM.Email, "", new { @class = "text-danger valMessage" })
+                </div>
+                <div class="form-group form-check form-switch" hidden="@(!newCustomer)">
+                    <input class="form-check-input" type="checkbox" id="createAccountCheckBox">
+                    <label class="form-check-label" for="createAccountCheckBox">Create Account</label>
+                </div>
+                <div class="form-group password" style="display:none">
+                    @Html.LabelFor(m => m.RegisterVM.Password, new { @class = "control-label" })
+                    @Html.PasswordFor(m => m.RegisterVM.Password, new { @class = "form-control", id = "pass" })
+                    @Html.ValidationMessageFor(m => m.RegisterVM.Password, "", new { @class = "text-danger valMessage" })
+                </div>
+                <div class="form-group password" style="display:none">
+                    @Html.LabelFor(m => m.RegisterVM.ConfirmPassword, new { @class = "control-label" })
+                    @Html.PasswordFor(m => m.RegisterVM.ConfirmPassword, new { @class = "form-control", id = "confirmPass" })
+                    @Html.ValidationMessageFor(m => m.RegisterVM.ConfirmPassword, "", new { @class = "text-danger valMessage" })
+                </div>
+                @Html.HiddenFor(m => m.RegisterVM.Customer.Email)
+                @Html.HiddenFor(m => m.RegisterVM.Customer.Id)
+                <input id="finaliseOrder" type="submit" class="btn btn-primary margin-top-10" disabled="@(!hasProducts)" value="Complete Order" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    $('#proceed').click(function () {
+        $('#nav-profile-tab').click();
+    });
+
+    $('#createAccountCheckBox').click(function () {
+        var pass = $('#pass');
+        var confirmPass = $('#confirmPass');
+        if ($('#createAccountCheckBox').is(':checked')) {
+            $('.password').show();
+            pass.val(null).change();
+            confirmPass.val(null).change();
+        } else {
+            $('.password').hide();
+            pass.val('123456').change();
+            confirmPass.val('123456').change();
+        }
+    });
+
+    $('.btnDelete').click(function() {
+        var btn = $(this);
+        var add = false;
+        var id = btn.data('code');
+        var quantity = btn.data('quantity');
+
+        $.ajax({
+            url: '@Url.Action("AddToCart", "Products")',
+            data: { add: add, quantity: quantity, id: id },
+            success: function (data) {
+                window.location.href = '@Url.Action("Cart", "Orders")';
+            },
+            error: function (xhr, err) {
+                alert("readyState: " + xhr.readyState + "\nstatus: " + xhr.status);
+                alert("responseText: " + xhr.responseText);
+            }  
+        });
+    });
+
+    $('#orderForm').submit(function(e){
+        e.preventDefault();
+        var vm = @Json.Serialize(Model);
+        var newCustomer = @Json.Serialize(newCustomer);
+
+        var $inputs = $('#orderForm :input');
+        var values = {};
+        $inputs.each(function () {
+            values[this.name] = $(this).val();
+        });
+
+        vm.registerVM.customer.name = values["RegisterVM.Customer.Name"];
+        vm.registerVM.customer.address = values["RegisterVM.Customer.Address"];
+        vm.registerVM.customer.city = values["RegisterVM.Customer.City"];
+        vm.registerVM.customer.email = values["RegisterVM.Email"];
+        vm.registerVM.email = values["RegisterVM.Email"];
+        vm.registerVM.customer.name = values["RegisterVM.Customer.Name"];
+
+        if (newCustomer) {
+            vm.createAccount = $('#createAccountCheckBox').is(':checked');
+            if (vm.createAccount) {
+                vm.registerVM.password = values["RegisterVM.Password"];
+                vm.registerVM.confirmPassword = values["RegisterVM.ConfirmPassword"];
+            }
+        };
+
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("FinaliseOrder", "Orders")',
+            data: { vm: vm },
+            success: function (data) {
+                window.location.href = '/Orders/Edit/' + data;
+            }
+        });
+
+        @*$('body').empty();
+        $('body').load('@Url.Action("FinaliseOrder", "Orders")', vm);*@
+
+    });
+</script>

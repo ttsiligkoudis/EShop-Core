@@ -1,5 +1,8 @@
 ﻿@model ViewModels.OrderViewModel
 
+<link href="~/jquery.rateit/rateit.min.css" rel="stylesheet" />
+<script src="~/jquery.rateit/jquery.rateit.min.js"></script>
+
 @{
     ViewBag.Title = "Order";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -11,22 +14,129 @@
 {
     @Html.ActionLink("Complete this order", "CompleteOrder", new { id = Model.Order.Id }, new { @class = "btn btn-primary" })
 }
-<table class="table table-bordered table-hover">
-    <thead>
-        <tr>
-            <th>Product</th>
-            <th>Category</th>
-            <th>Price</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var orderProduct in Model.OrderProducts)
-        {
-            <tr>
-                <td>@orderProduct.ProductName</td>
-                <td>@orderProduct.ProductCategory</td>
-                <td>@orderProduct.ProductPrice $</td>
-            </tr>
+@foreach (var item in Model.OrderProducts)
+{
+    <div class="row border p-2 m-2 rounded justify-content-center align-items-center" style="background-color: white;">
+        <div class="col-3">
+            <div class="justify-content-center align-items-center">
+                <a href="@Url.Action("Details","Products", new { id = item.ProductId })"><img class="card-img-top" style="max-width:200px; max-height:150px" src="@item.Product.Image" /></a>
+            </div>
+        </div>
+        <div class="col-9">
+            <h4>@item.ProductName</h4>
+            <p>@item.Product.Description</p>
+            <div class="row">
+                <div class="col-sm-9">
+                    <p>Price: @item.Quantity X @item.Price <i class="fa-solid fa-euro-sign"></i></p>
+                </div>
+                <div class="col-sm-3">
+                    <button class="reviewBtn btn btn-primary" data-bs-toggle="modal" data-bs-target="#reviewModal" data-code="@item.ProductId" data-name="@item.ProductName">Write a Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<div class="card mt-4 align-items-center rounded" style="width:250px; margin-left:auto; margin-right:0.5rem">
+    <div class="card-body">
+        <h5 class="card-title">Cart Total</h5>
+        <table class="table table-borderless">
+            <tbody>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td>@Model.Order.FinalPrice <i class="fa-solid fa-euro-sign"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                    <div class="mb-3">
+                    <label for="rateit" class="col-form-label">Rate:</label>
+                    <div id="rateit" class="rateit"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment" class="col-form-label">Comment:</label>
+                        <textarea class="form-control" id="comment"></textarea>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="saveReview" type="button" class="btn btn-primary" data-customerid="@Model.Order.CustomerId" data-rateid="0">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var stars = $('.rateit');
+
+    stars.rateit({
+        readonly: false,
+        resetable: false,
+        min: 0,
+        max: 5,
+        step: 0.5,
+    });
+
+    var savebtn = $("#saveReview")[0];
+    var modalLabel = $('#reviewModalLabel');
+    var modalComment = $('#comment');
+
+    $('.reviewBtn').click(function () {
+        var button = $(this)[0];
+        var productId = button.dataset.code;
+        var customerId = savebtn.dataset.customerid;
+        var productName = button.dataset.name;
+
+        modalLabel.text(productName + ' Review');
+        savebtn.dataset.productid = productId;
+
+        $.ajax({
+            url: '@Url.Action("GetRate", "Products")',
+            async: false,
+            data: { productId: productId, customerId: customerId },
+            success: function (data) {
+                if (data != null) {
+                    savebtn.dataset.rateid = data.id;
+                    stars.rateit('value', data.rate);
+                    modalComment.val(data.comment);
+                }
+            } 
+        });
+    });
+
+    $("#reviewModal").on('hide.bs.modal', function (event) {
+        modalLabel.text(null);
+        modalComment.val(null);
+        savebtn.dataset.productid = null;
+        savebtn.dataset.rateid = 0;
+        stars.rateit('reset');
+    });
+
+    $('#saveReview').click(function () {
+        var rateDto = {
+            Id: savebtn.dataset.rateid,
+            ProductId: savebtn.dataset.productid,
+            CustomerId: savebtn.dataset.customerid,
+            Rate: stars.rateit('value'),
+            Comment: modalComment.val()
         }
-    </tbody>
-</table>
+
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("SaveRate", "Products")',
+            data: rateDto,
+            success: function (data) {
+                $("#reviewModal").modal('hide');
+            } 
+        });
+    });
+</script>

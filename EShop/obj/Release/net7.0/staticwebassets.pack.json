@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\css\\Site.css"
     },
     {
-      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\bootstrap.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap.css"
-    },
-    {
       "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\css\\fullcalendar420\\core\\main.css",
       "PackagePath": "staticwebassets\\css\\fullcalendar420\\core\\main.css"
     },
@@ -53,8 +49,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\icons\\about_us.jpeg",
+      "PackagePath": "staticwebassets\\icons\\about_us.jpeg"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\icons\\eshop.png",
+      "PackagePath": "staticwebassets\\icons\\eshop.png"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\jquery.rateit\\delete.gif",
+      "PackagePath": "staticwebassets\\jquery.rateit\\delete.gif"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\jquery.rateit\\jquery.rateit.min.js",
+      "PackagePath": "staticwebassets\\jquery.rateit\\jquery.rateit.min.js"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\jquery.rateit\\rateit.min.css",
+      "PackagePath": "staticwebassets\\jquery.rateit\\rateit.min.css"
+    },
+    {
+      "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\jquery.rateit\\star.gif",
+      "PackagePath": "staticwebassets\\jquery.rateit\\star.gif"
     },
     {
       "Id": "C:\\github\\EShop-Core\\EShop\\wwwroot\\js\\fullcalendar420\\core\\locales-all.js",

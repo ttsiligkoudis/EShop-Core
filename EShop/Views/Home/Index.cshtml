@@ -1,4 +1,5 @@
-﻿@using EShop.Helpers
+﻿@model List<DataModels.Dtos.ProductDto>
+@using EShop.Helpers
 @using ISession = EShop.Helpers.ISession
 @inject ISession Session
 @inject IUserAccess UserAccess
@@ -6,20 +7,57 @@
     var customer = Session.GetCustomer();
     ViewBag.Title = "Home Page";
 }
-<br />
-@if (!UserAccess.IsCustomer(customer))
-{
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+
+<style>
+    .chooseUs {
+        min-height: 150px;
+    }
+</style>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Welcome to My E-commerce Site</h1>
+        <p>Shop for the latest trends and styles at affordable prices.</p>
     </div>
-}
-else
+</div>
+<div class="container">
+    <h2 class="text-center">Featured Products</h2>
+    <div class="row">@Html.Partial("_CardView", Model)</div>
+</div>
+<div class="container">
+    <h2 class="text-center">Why Choose Us</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="chooseUs card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Free Shipping</h5>
+                    <p class="card-text">We offer free shipping on all orders over $50.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="chooseUs card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Easy Returns</h5>
+                    <p class="card-text">We have a hassle-free returns policy, so you can shop with confidence.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="chooseUs card-body">
+                    <h5 class="card-title">24/7 Support</h5>
+                    <p class="card-text">Our customer support team is available 24/7 to assist you with any questions or concerns.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*@if (UserAccess.IsCustomer(customer))
 {
     <div>
         <div class="col-md-6">@Html.Partial("_Calendar")</div>
-        @*<partial name="Shared/_Calendar.cshtml" />*@
         <div class="col-md-6">
             <div><br /><br /></div>
             <div class="jumbotron">
@@ -30,26 +68,4 @@ else
         </div>
     </div>
     <div class="col-md-12"></div>   
-}
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
-
+}*@

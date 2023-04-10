@@ -45,3 +45,11 @@ textarea {
     background-color: #78140e;
     border-color: #78140e;
 }
+
+.margin-top-10 {
+    margin-top:10px;
+}
+
+.valMessage {
+    font-size: 13px;
+}

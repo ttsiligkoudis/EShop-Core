@@ -1,44 +1,77 @@
 ﻿@using Enums;
-@using ViewModels
-@model ViewModels.ProductViewModel
+@model DataModels.Dtos.ProductDto
 
 @{
     ViewBag.Title = "Product";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@ViewBag.Title</h2>
-
-@using (Html.BeginForm("Save", "Products"))
-{
-    <div class="form-group">
-        @Html.LabelFor(m => m.Product.Name)
-        @Html.TextBoxFor(m => m.Product.Name, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Product.Name)
+<br />
+<form asp-action="Save" method="post" enctype="multipart/form-data">
+    @if (!string.IsNullOrEmpty(Model.Image))
+    {
+        <img src="@Model.Image" style="max-width:280px" />
+    }
+<div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Name)
     </div>
+
     <div class="form-group">
         @Html.LabelFor(m => m.Price) ($)
         @Html.TextBoxFor(m => m.Price, new { @class = "form-control" })
         @Html.ValidationMessageFor(m => m.Price)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Product.Quantity)
-        @Html.TextBoxFor(m => m.Product.Quantity, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Product.Quantity)
+        @Html.LabelFor(m => m.Quantity)
+        @Html.TextBoxFor(m => m.Quantity, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Quantity)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Product.Color)
-        @Html.TextBoxFor(m => m.Product.Color, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Product.Color)
+        @Html.LabelFor(m => m.Description)
+        @Html.TextBoxFor(m => m.Description, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Description)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Product.Category)
-        <select asp-for="@Model.Product.Category" class="form-control" asp-items="Html.GetEnumSelectList<Category>()">
+        @Html.LabelFor(m => m.Category)
+        <select asp-for="@Model.Category" class="form-control" asp-items="Html.GetEnumSelectList<Category>()">
             <option disabled="disabled" value=""></option>
         </select>
-        @Html.ValidationMessageFor(m => m.Product.Category)
+        @Html.ValidationMessageFor(m => m.Category)
     </div>
-    @Html.HiddenFor(m => m.Product.Id)
-    @Html.HiddenFor(m => m.Product.Price)
+    <div class="form-group">
+        @Html.LabelFor(m => m.Image)
+        @Html.TextBoxFor(m => m.Image, new { @class = "form-control", data_val = "false" })
+        <input type="file" class="form-control-file form-control" id="image" asp-for="Image" name="Image" accept="image/*" onchange="previewImage()">
+        @Html.ValidationMessageFor(m => m.Image)
+    </div>
+
+    <div class="form-group">
+        <img id="imagePreview" src="#" alt="Preview Image" style="max-width: 200px; max-height: 200px; display: none;">
+    </div>
+
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.Price)
     <button type="submit" class="btn btn-primary">Save</button>
-}
+</form>
+
+<script>
+    function previewImage() {
+        var preview = document.querySelector('#imagePreview');
+        var file = document.querySelector('#image').files[0];
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+            preview.src = reader.result;
+            preview.style.display = "block";
+        }
+
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            preview.src = "";
+            preview.style.display = "none";
+        }
+    }
+</script>

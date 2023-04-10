@@ -1,0 +1,186 @@
+﻿@using System.Web
+@using Enums
+@model ViewModels.ProductViewModel;
+
+<link href="~/jquery.rateit/rateit.min.css" rel="stylesheet" />
+<script src="~/jquery.rateit/jquery.rateit.min.js"></script>
+
+<style>
+    .content{
+        background-color:white;
+        margin:20px auto;
+        padding:10px 50px;
+        width:100%;
+    }
+
+    .layoutImage{
+        width:100%;
+        display:block;
+        height:auto;
+        max-height: 600px;
+        margin: 0 auto;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .title{
+        margin-bottom:20px;
+        text-align:center;
+    }
+
+    .btn{
+        outline-color: transparent;
+    }
+
+    .detailsDiv{
+        margin:auto;
+    }
+</style>
+
+<div class="content">
+    <div class="row">
+        <div class="col-lg-6 col-md-4 col-sm-12">
+            <img class="layoutImage" src="@Model.Product.Image" />
+        </div>
+        <div class="detailsDiv col-lg-6 col-md-8 col-sm-12 text-center">
+            <h3 class="title">@Model.Product.Name</h3>
+            <h4>@Model.Product.Description</h4>
+            <div class="rateit" data-rate="@Model.Product.Rate"></div>
+            <p><i class="fa-solid fa-tags"></i> @Model.Product.Category</p>
+            <p><i class="fa-solid fa-money-bill-wave"></i> @Model.Product.Price <i class="fa-solid fa-euro-sign"></i></p>
+            @if (Model.Product.Quantity == 0)
+            {
+                <p style="color:darkred"><i class="fa-solid fa-cubes"></i> Out of stock</p>
+            }
+            else if (Model.Product.Quantity <= 5)
+            {
+                <p style="color:darkred"><i class="fa-solid fa-cubes"></i> Almost out of stock (Remaining @Model.Product.Quantity)</p>
+            }
+            else
+            {
+                <p><i class="fa-solid fa-cubes"></i> Remaining @Model.Product.Quantity</p>
+            }
+            @if (Model.Product.Quantity > 0)
+            {
+                <div class="btn-group text-center" role="group">
+                    <button id="removeQuantity" type="button" class="btn" style="width:40px"><i class="fa-solid fa-circle-minus"></i></button>
+                    <input id="quantity" type="text" inputmode="numeric" class="form-control input-number text-center" style="width:100px" value="1" min="1" max="@Model.Product.Quantity">
+                    <button id="addQuantity" type="button" class="btn" style="width:40px"><i class="fa-solid fa-circle-plus"></i></button>
+                </div>
+                <button id="cartBtn" type="button" class="btn btn-primary" style="width:200px">Add to cart</button>
+            }
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        @if (Model.Product.Category == Category.Laptops)
+        {
+            <p>Laptops are portable and versatile devices that have become essential tools for both personal and professional use. They are equipped with a variety of hardware components, including processors, memory, storage, graphics cards, and displays, which allow them to perform a wide range of tasks. Laptops can be used for everyday tasks such as browsing the internet, sending emails, and watching videos, as well as more demanding tasks such as gaming, video editing, and programming. In addition, many laptops are now designed with features such as touchscreens, 2-in-1 designs, and voice assistants to provide users with more flexibility and convenience. Overall, laptops have revolutionized the way we work, communicate, and entertain ourselves, and they continue to evolve and improve with new advancements in technology.</p>
+        } else if (Model.Product.Category == Category.Tablets)
+        {
+            <p>Tablets are portable devices that bridge the gap between smartphones and laptops. They offer larger screens than smartphones, making them ideal for tasks such as reading e-books, watching movies, and playing games. Tablets are also great for productivity, with some models offering optional keyboard attachments and powerful processors that can handle tasks such as video editing and graphic design. Tablets are particularly popular in education and business environments, as they offer a lightweight and flexible alternative to traditional desktop computers. Many tablets are equipped with high-quality cameras, making them great for video conferencing and content creation. They also offer a range of features, such as split-screen multitasking, handwriting recognition, and voice assistants, that make them even more useful and intuitive to use. Overall, tablets are versatile and powerful devices that offer a range of capabilities and use cases, from entertainment to productivity, and have become an essential part of modern computing.</p>
+        } else if (Model.Product.Category == Category.Smartphones)
+        {
+            <p>Smartphones are pocket-sized computers that have become an essential part of modern life. They are incredibly versatile devices that allow us to do everything from making phone calls and sending texts to browsing the internet, checking email, taking photos, watching videos, and playing games. Today's smartphones are equipped with powerful processors, high-quality cameras, and high-resolution displays, making them capable of performing tasks that were once only possible on desktop computers. They also come with a variety of features, such as biometric security, voice assistants, and augmented reality, that make them even more useful and engaging. With the rise of 5G connectivity, smartphones are becoming even more powerful, allowing us to download and stream content at incredible speeds, and enabling new applications that were once thought impossible. Overall, smartphones are an incredibly powerful tool that have revolutionized the way we communicate, work, and play.</p>
+        }
+    </div>
+
+    @if (Model.Rates.Any())
+    {
+        <h3 class="text-center my-5">Product Reviews</h3>
+        @foreach (var rate in Model.Rates)
+        {
+            <div class="row">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@rate.CustomerName</h5>
+                        <div class="rateit" data-rate="@rate.Rate"></div>
+                        <p class="card-text">@rate.Comment</p>
+                    </div>
+                </div>
+            </div> 
+        } 
+    }
+</div>
+
+
+<script type="text/javascript">
+
+    $('.rateit').rateit({
+        readonly:true,
+        resetable:false,
+        min: 0,
+        max: 5,
+        step: 0.5,
+    });
+
+    $(".rateit").each(function () {
+        let value = $(this).data('rate');
+        $(this).rateit('value', value);
+    });
+
+    $('#quantity').change(function (e) {
+        var input = $(this);
+        var currentVal = parseInt(input.val());
+
+        if (currentVal < input.attr('min') || Number.isNaN(currentVal))
+            input.val(input.attr('min')).change();
+
+        if (currentVal > input.attr('max'))
+            input.val(input.attr('max')).change();
+    });
+
+    $('#removeQuantity, #addQuantity').click(function () {
+        var btn = $(this);
+        var input = $('#quantity');
+        var currentVal = parseInt(input.val());
+
+        if (btn[0].id == 'removeQuantity')
+            currentVal--;
+
+        else if (btn[0].id == 'addQuantity')
+            currentVal++;
+
+        input.val(currentVal).change();
+        
+    });
+
+    var product = @Json.Serialize(Model.Product);
+    var add = !@Json.Serialize(ViewBag.ProductExistsInCart);
+
+    function CheckCartBtn(add) {
+        var cartBtn = $("#cartBtn");
+        if(add){
+            cartBtn.css("background-color", "rgb(13, 110, 253)");
+            cartBtn.css("border-color", "rgb(13, 110, 253)");
+            cartBtn.text('Add to Cart');
+            $("#quantity").prop('disabled', false);
+        } 
+        else {
+            cartBtn.css("background-color", "darkred");
+            cartBtn.css("border-color", "darkred");
+            cartBtn.text('Remove from Cart');
+            $("#quantity").prop('disabled', true);
+        }
+    }
+    CheckCartBtn(add);
+    $("#cartBtn").click(function () {
+        var quantity = $('#quantity').val();
+        $.ajax({
+            url: '@Url.Action("AddToCart", "Products")',
+            data: { add: add, quantity: quantity, id: product.id },
+            success: function (data) {
+                add = !add;
+                CheckCartBtn(add);
+                $('#lblCartCount').text(data.length);
+            },
+            error: function (xhr, err) {
+                alert("readyState: " + xhr.readyState + "\nstatus: " + xhr.status);
+                alert("responseText: " + xhr.responseText);
+            }   
+        });
+    });
+</script>

@@ -6,29 +6,23 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using ViewModels;
 
 namespace EShop.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private readonly IUserAccess _userAccess;
-        private readonly ISession _session;
-        private readonly IMapper _mapper;
-        private ClientHelper _client;
-
-        public HomeController(IUserAccess userAccess, ISession session, IMapper mapper)
+        public HomeController(IUserAccess userAccess, ISession session, IMapper mapper) : base(userAccess, session, mapper)
         {
-            _userAccess = userAccess;
-            _session = session;
-            _mapper = mapper;
-            _client = new ClientHelper();
         }
 
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View();
+            var products = (await _client.ProductClient.GetListAsync("Products/Random/?length=3")).ToList();
+            
+            return View(products);
         }
 
         public ActionResult About()

@@ -2,35 +2,16 @@
 using System.Threading.Tasks;
 using EShop.Helpers;
 using Microsoft.AspNetCore.Mvc;
-using Client;
 using ISession = EShop.Helpers.ISession;
 using DataModels.Dtos;
+using AutoMapper;
 
 namespace EShop.Controllers
 {
-    public class CustomersController : Controller
+    public class CustomersController : BaseController
     {
-        private readonly IUserAccess _userAccess;
-        private readonly ISession _session;
-        private ClientHelper _client;
-
-        public CustomersController(IUserAccess userAccess, ISession session)
+        public CustomersController(IUserAccess userAccess, ISession session, IMapper mapper) : base(userAccess, session, mapper)
         {
-            _userAccess = userAccess;
-            _session = session;
-            _client = new ClientHelper();
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                if (_client != null)
-                {
-                    _client.Dispose();
-                    _client = null;
-                }
-            }
         }
 
         public async Task<IActionResult> Index()

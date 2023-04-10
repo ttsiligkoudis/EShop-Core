@@ -1,92 +1,231 @@
 ﻿@using EShop.Helpers
+@using Enums
 @using ISession = EShop.Helpers.ISession
 @inject ISession Session
 @inject IUserAccess UserAccess
+
 @{
     var customer = Session.GetCustomer();
+    var cartProducts = Session.GetProducts();
+    var cartCount = cartProducts == null ? 0 : cartProducts.Count;
+    var categories = (from d in Enum.GetValues(typeof(Category)).Cast<Category>()
+                      select new SelectListItem()
+                        {
+                            Value = Convert.ToInt16(d).ToString(),
+                            Text = d.ToString()
+                        }).ToList();
 }
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewBag.Title - My ASP.NET App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EShop</title>
+    <link rel="shortcut icon" href="~/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="~/css/bootstrap.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
-    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/5feecfa793.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="~/js/jquery.min.js"></script>
     <script src="~/js/jquery.validate.min.js"></script>
     <script src="~/js/jquery.validate.unobtrusive.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-</head>
-<body>
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            @Html.ActionLink("EShop", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                @if (UserAccess.IsCustomer(customer))
-                {
-                    if (UserAccess.IsAdmin(customer))
-                    {
-                        <li>@Html.ActionLink("Customers", "Index", "Customers")</li>
-                        <li>@Html.ActionLink("Users", "Index", "Users")</li>
-                    }
-                    <li>@Html.ActionLink("Orders", "Index", "Orders")</li>
+    <script src="https://kit.fontawesome.com/5feecfa793.js" crossorigin="anonymous"></script>
+    
+    <style>
+        a, a::before, a::after {
+            box-sizing: border-box;
+        }
 
-                }
-                <li>@Html.ActionLink("Products", "Index", "Products")</li>
-                <li>@Html.ActionLink("New Order", "Create", "Orders")</li>
-            </ul>
+        html, body {
+            color-scheme: dark light;
+            height: 100%;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f1f1f1 !important;
+            font-family: 'Open Sans', sans-serif !important;
+        }
+
+        .dropdown-menu {
+            background-color: #433f40;
+        }
+
+        .dropdown-item {
+            color: white;
+        }
+
+        .dropdown-item:hover {
+            color: #212529;
+        }
+
+        .dropdown:hover > .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown > .dropdown-toggle:active {
+            /*Without this, clicking will make it sticky*/
+            pointer-events: none;
+        }
+
+        li.nav-item {
+            margin-right: 10px;
+        }
+
+        #lblCartCount {
+            font-size: 10px;
+            background: #418deb;
+            color: #fff;
+            padding: 3px 3px;
+            vertical-align: top;
+            margin-left: -8px;
+            margin-top: -5px;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <a href="@Url.Action("Index","Home")"><img width="70px" height="50px" src="~/icons/eshop.png" /></a>
             @if (UserAccess.IsCustomer(customer))
             {
-                using (Html.BeginForm("Logout", "Users", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
-                {
-                    @Html.AntiForgeryToken()
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            @Html.ActionLink("Hello " + customer.Name + "!", "Details", "Users", new { id = customer.User.Id }, null)
+                <a class="nav-link text-white" href="@Url.Action("Details","Users", new { id = customer.User.Id })">Hi @customer.Name!</a>
+            }
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="width:50%" class="bg-dark offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel" href="@Url.Action("Index","Home")"><i class="fa-solid fa-shop"></i> EShop</a>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="@Url.Action("Index","Home")"><i class="fa-solid fa-house"></i> Home</a>
                         </li>
-                        <li>@Html.ActionLink("Log out", "Logout", "Users", null, new { id = "logoutForm" })</li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-tags"></i> Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                @foreach (var item in categories)
+                                {
+                                    <li><a class="dropdown-item" href="@Url.Action("Index","Products", new { id = item.Value })">@item.Text</a></li>
+                                }
+                            </ul>
+                        </li>
+                        @if (UserAccess.IsCustomer(customer))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index","Orders")"><i class="fa fa-cube"></i> Orders</a>
+                            </li>
+                        }
+                        @if (UserAccess.IsAdmin(customer))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index","Customers")">Customers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index","Users")">Users</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("AdminIndex","Products")">Products Edit</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="https://eshopapi.myportofolio.eu/swagger/">ConsumerAPI</a>
+                            </li>
+                        }
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="@Url.Action("About","Home")">
+                                <i class="fa-solid fa-circle-info"></i> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="@Url.Action("Contact","Home")">
+                                <i class="fa fa-phone"></i> Contact
+                            </a>
+                        </li>
+                        @if (UserAccess.IsCustomer(customer))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Logout","Users")"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Login","Users")">
+                                    <i class="fa-solid fa-user"></i> Login / Register
+                                </a>
+                            </li>
+                        }
+                        <li class="nav-item">
+                            <a href="@Url.Action("Cart","Orders")" class="nav-link text-white" aria-label="View your shopping cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class='badge badge-warning' id='lblCartCount'>@cartCount</span>
+                            </a>
+                        </li>
                     </ul>
-                }
-            }
-            else
-            {
-                <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Register", "Register", "Users", null, new { id = "registerLink" })</li>
-                    <li>@Html.ActionLink("Log in", "Login", "Users", null, new { id = "loginLink" })</li>
-                </ul>
-            }
-            <ul class="nav navbar-nav navbar-right">
-                @if (UserAccess.IsAdmin(customer))
-                {
-                    <li><a href="https://eshopapi.myportofolio.eu/swagger/">ConsumerAPI</a></li>
-                }
-                <li>@Html.ActionLink("About us", "About", "Home")</li>
-                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-            </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<div class="container body-content">
+    </nav>
+<div class="container body-content pt-100">
+    <br />
+    <br />
+    <br />
+    <br />
     @RenderBody()
-    <hr />
-    <footer>
-        <p>&copy; @DateTime.Now.Year - EShop</p>
-    </footer>
+    <br />
 </div>
-    
+<footer class="bg-dark text-light py-3 mt-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <h5 class="mb-3">About Us</h5>
+                    <p>Shop with us for high-quality products, competitive prices, and exceptional customer service. Your satisfaction is our top priority.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <h5 class="mb-3">Helpful Links</h5>
+                <ul class="list-unstyled">
+                        <li><a href="@Url.Action("Contact","Home")">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <h5 class="mb-3">Connect with Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <h5 class="mb-3">Subscribe to Our Newsletter</h5>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="newsletter-email" placeholder="Enter your email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center">© @DateTime.Now.Year My E-commerce Website</p>
+    </div>
+</footer>
 @RenderSection("Scripts", required: false)
 </body>
 </html>

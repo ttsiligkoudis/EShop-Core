@@ -64,7 +64,8 @@
       "System.Text.Encodings.Web/4.5.0": {},
       "DataModels/1.0.0": {
         "dependencies": {
-          "Enums": "1.0.0"
+          "Enums": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "2.2.0"
         },
         "runtime": {
           "DataModels.dll": {}
