@@ -1,17 +1,13 @@
 ﻿@using EShop.Helpers
-@using DataModels
+@using DataModels.Dtos
 @model ViewModels.UserViewModel
-@using ISession = EShop.Helpers.ISession
-@using AutoMapper
-@inject ISession Session
-@inject IUserAccess UserAccess
-@inject IMapper Mapper
 @{
     ViewBag.Title = "Account Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var customer = Session.GetCustomer();
-    var chosenCustomer = Mapper.Map<Customer>(Model.Customer);
-    chosenCustomer.User = Mapper.Map<User>(Model.User);
+    var customer = (CustomerDto)ViewBag.Customer;
+    var user = (UserDto)ViewBag.User;
+    bool isCustomer = ViewBag.IsCustomer ?? false;
+    bool isAdmin = ViewBag.IsAdmin ?? false;
 }
 
 <style>
@@ -24,7 +20,7 @@
 <div class="container">
     <div class="center">
         <h3>@ViewBag.Title</h3>
-        @if (UserAccess.IsAdmin(customer) && !UserAccess.IsAdmin(chosenCustomer))
+        @if (isAdmin && Model.User.UserType != Enums.UserType.Admin)
         {
             @Html.ActionLink("Convert to Admin", "ConvertToAdmin", new { id = Model.User.Id }, new { @class = "btn btn-primary" })
         }

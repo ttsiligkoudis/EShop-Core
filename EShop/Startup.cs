@@ -11,8 +11,10 @@ using EShop.Helpers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
-using ISession = EShop.Helpers.ISession;
 using System.Globalization;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authentication;
 
 namespace EShop
 {
@@ -28,12 +30,13 @@ namespace EShop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddDistributedMemoryCache();
             services.AddHttpContextAccessor();
 
             services.AddSession(options => {
-                options.IdleTimeout = TimeSpan.FromHours(10);//You can set Time   
+                options.IdleTimeout = TimeSpan.FromHours(10);
+                //options.Cookie.HttpOnly = true;
+                //options.Cookie.IsEssential = true;
             });
 
             services.AddMvc(setupAction =>
@@ -57,9 +60,6 @@ namespace EShop
                 }
             });
 
-            services.AddScoped<ISession, Session>();
-            services.AddScoped<IUserAccess, UserAccess>();
-
             services.AddHttpClient("myServiceClient")
                 .ConfigureHttpClient(client =>
                 {
@@ -69,6 +69,22 @@ namespace EShop
                 .ConfigurePrimaryHttpMessageHandler(
                     () => new HttpClientHandler() { CookieContainer = new CookieContainer() }
                 );
+
+            services.AddAuthentication(o =>
+            {
+                o.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                o.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+            })
+            .AddCookie()
+            .AddGoogle(options =>
+            {
+                options.ClientId = Configuration["Authentication:Google:ClientId"];
+                options.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
+                options.ClaimActions.MapJsonKey("urn:google:picture", "picture", "url");
+                options.SaveTokens = true;
+            });
+
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -79,6 +95,8 @@ namespace EShop
 
             CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
             CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+
+            app.UseMiddleware<CorsMiddleware>();
 
             if (env.IsDevelopment())
             {
@@ -93,10 +111,11 @@ namespace EShop
 
             app.UseStaticFiles();
 
-            app.UseSession();
-
             app.UseRouting();
 
+            app.UseSession();
+
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

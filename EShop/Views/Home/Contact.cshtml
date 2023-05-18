@@ -1,110 +1,95 @@
-﻿
+﻿@{
+    var message = ViewBag.Message as string;
+}
 <style>
     #contact {
         background-color: #f8f9fa;
     }
 
-        #contact h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #0d6efd;
-        }
-
-        #contact p {
-            font-size: 1.25rem;
-            font-weight: 400;
-            line-height: 1.5;
-            color: #6c757d;
-        }
-
-        #contact form label {
-            font-size: 1.125rem;
-            font-weight: 400;
-            color: #495057;
-        }
-
-        #contact form input[type=text],
-        #contact form input[type=email],
-        #contact form textarea {
-            border: 1px solid #ced4da;
-            border-radius: 0.375rem;
-            padding: 0.75rem 1rem;
-            font-size: 1rem;
-            font-weight: 400;
-            color: #495057;
-            background-color: #fff;
-            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        }
-
-            #contact form input[type=text]:focus,
-            #contact form input[type=email]:focus,
-            #contact form textarea:focus {
-                border-color: #0d6efd;
-                box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-            }
-
-        #contact form button[type=submit] {
-            border-radius: 0.375rem;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #fff;
-            background-color: #0 d6efd;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-
-#contact form button[type=submit]:hover {
-  background-color: #0c5fde;
-  border-color: #0c5fde;
-}
-
-#contact .card {
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-#contact .card-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #0d6efd;
-}
-
-#contact .card-body p {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #6c757d;
-}
-</style>
- 
-<style type="text/css" media="screen and (min-width: 768px)">
     #contact h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #0d6efd;
+    }
+
+    #contact p {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #6c757d;
     }
 
     #contact form label {
-    font-size: 1.5rem;
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #495057;
     }
 
     #contact form input[type=text],
     #contact form input[type=email],
     #contact form textarea {
-    font-size: 1.25rem;
-    padding: 1rem;
+        border: 1px solid #ced4da;
+        border-radius: 0.375rem;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #495057;
+        background-color: #fff;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    #contact form input[type=text]:focus,
+    #contact form input[type=email]:focus,
+    #contact form textarea:focus {
+        border-color: #0d6efd;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    #contact form button[type=button] {
+        border-radius: 0.375rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        background-color: #0 d6efd;
+        transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+        margin-bottom: 10px
+    }
+
+    #contact form button[type=button]:hover {
+      background-color: #0c5fde;
+      border-color: #0c5fde;
     }
 
     #contact .card {
-    margin-top: 2.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    #contact .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0d6efd;
+    }
+
+    #contact .card-body p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #6c757d;
     }
 </style>
-
+ 
+<div class="alert alert-success" style="display: none;" role="alert">
+    <i class="fas fa-check-circle"></i> <span id="successMessageText"></span>
+</div>
 <section id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <h2 class="mb-4">Get in touch</h2>
                 <p class="mb-4">Fill out the form below to contact us and we'll get back to you as soon as possible.</p>
-                <form action="#" method="POST">
+                <form method="POST">
                 <div class="mb-3">
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                 </div>
@@ -114,7 +99,7 @@
                 <div class="mb-3">
                     <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Send message</button>
+                <button type="button" id="formSendMessage" class="btn btn-primary">Send message</button>
                 </form>
             </div>
             <div class="col-lg-6">
@@ -122,8 +107,8 @@
                     <div class="card-body">
                         <h5 class="card-title mb-3">Contact information</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-3"><i class="fas fa-envelope me-3"></i><a href="mailto:info@myecommercewebsite.com">info@myecommercewebsite.com</a></li>
-                            <li><i class="fas fa-phone me-3"></i>555-555-5555</li>
+                            <li class="mb-3"><i class="fas fa-envelope me-3"></i><a href="mailto:eshop.myportofolio@gmail.com">eshop.myportofolio@gmail.com</a></li>
+                            <li><i class="fas fa-phone me-3"></i>6943444650</li>
                         </ul>
                     </div>
                 </div>
@@ -138,3 +123,25 @@
         </div>
     </div>
 </section>
+
+<script>
+    $('#formSendMessage').click(function (e) {
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
+
+        $.ajax({
+            url: '@Url.Action("ContactMessage", "Home")',
+            data: { name: name, email: email, message: message },
+            success: function (data) {
+                if(data != null || data != '') {
+                    $('#successMessageText').html(data);
+                    $('.alert.alert-success').show();
+                    $('#name').val(null);
+                    $('#email').val(null);
+                    $('#message').val(null);
+                }
+            }
+        });
+    });
+</script>

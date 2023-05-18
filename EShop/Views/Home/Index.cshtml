@@ -1,10 +1,8 @@
 ﻿@model List<DataModels.Dtos.ProductDto>
-@using EShop.Helpers
-@using ISession = EShop.Helpers.ISession
-@inject ISession Session
-@inject IUserAccess UserAccess
+@using DataModels.Dtos
 @{
-    var customer = Session.GetCustomer();
+    var customer = (CustomerDto)ViewBag.Customer;
+    bool isCustomer = ViewBag.IsCustomer ?? false;
     ViewBag.Title = "Home Page";
 }
 
@@ -54,7 +52,7 @@
     </div>
 </div>
 
-@*@if (UserAccess.IsCustomer(customer))
+@*@if (isCustomer)
 {
     <div>
         <div class="col-md-6">@Html.Partial("_Calendar")</div>

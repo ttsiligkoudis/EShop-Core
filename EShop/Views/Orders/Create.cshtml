@@ -1,13 +1,10 @@
-﻿@using EShop.Helpers
-@using ViewModels
-@model ViewModels.OrderViewModel
-@using ISession = EShop.Helpers.ISession
-@inject ISession Session
-@inject IUserAccess UserAccess
+﻿@model ViewModels.OrderViewModel
+@using DataModels.Dtos
 @{
     ViewBag.Title = "Create Order";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var customer = Session.GetCustomer();
+    bool isCustomer = ViewBag.IsCustomer ?? false;
+    bool isAdmin = ViewBag.IsAdmin ?? false;
 }
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -26,20 +23,16 @@
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Order.Customer)
-
-        @if (UserAccess.IsCustomer(customer))
+        @if (isCustomer)
         {
-            if (!UserAccess.IsAdmin(customer))
-            {
-                <p>@Model.Order.Customer?.Name</p>
-            }
-            else
-            {
-                <select asp-for="@Model.Order.CustomerId" class="form-control" asp-items="Model.Customers.ConvertAll(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name })">
-                    <option disabled value="">Please select</option>
-                </select>
-                @Html.ValidationMessageFor(m => m.Order.CustomerId)
-            }
+            <p>@Model.Order.Customer?.Name</p>
+        }
+        else if (isAdmin)
+        {
+            <select asp-for="@Model.Order.CustomerId" class="form-control" asp-items="Model.Customers.ConvertAll(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name })">
+                <option disabled value="">Please select</option>
+            </select>
+            @Html.ValidationMessageFor(m => m.Order.CustomerId)
         }
         else
         {

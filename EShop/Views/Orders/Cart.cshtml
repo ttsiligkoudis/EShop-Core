@@ -1,7 +1,4 @@
 ﻿@model ViewModels.FinalOrderViewModel
-@using ISession = EShop.Helpers.ISession
-@using DataModels
-@inject ISession Session
 @{
     ViewBag.Title = "Cart";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -214,12 +211,8 @@
             url: '@Url.Action("FinaliseOrder", "Orders")',
             data: { vm: vm },
             success: function (data) {
-                window.location.href = '/Orders/Edit/' + data;
+                window.location.href = '/Orders/Edit/' + data + "?newOrder=true";
             }
         });
-
-        @*$('body').empty();
-        $('body').load('@Url.Action("FinaliseOrder", "Orders")', vm);*@
-
     });
 </script>

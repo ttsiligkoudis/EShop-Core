@@ -1,12 +1,11 @@
-﻿using AutoMapper;
-using Client;
-using DataModels.Dtos;
-using EShop.Helpers;
+﻿using DataModels.Dtos;
+using Google.Apis.Http;
+using Helpers;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
 using ViewModels;
 
@@ -14,7 +13,7 @@ namespace EShop.Controllers
 {
     public class HomeController : BaseController
     {
-        public HomeController(IUserAccess userAccess, ISession session, IMapper mapper) : base(userAccess, session, mapper)
+        public HomeController(IHttpContextAccessor accessor) : base(accessor)
         {
         }
 
@@ -34,9 +33,21 @@ namespace EShop.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
+        }
+
+        public async Task<ActionResult> ContactMessage(string name, string email, string message)
+        {
+            var msg = new MessageDto
+            {
+                Email = email,
+                Subject = "Contact Form Submission",
+                Body = EmailHelper.ContactMessageHtml(name, email, message)
+            };
+
+            await _client.MessagesClient.PostAsync(msg, $"Messages/SendMessage");
+
+            return new JsonResult("We have successfully received your message and our team will get back to you as soon as possible.");
         }
 
         public async Task<IActionResult> GetCalendar()
@@ -44,14 +55,13 @@ namespace EShop.Controllers
             try
             {
                 IEnumerable<OrderDto> orders;
-                var customer = _session.GetCustomer();
 
-                if (!_userAccess.IsCustomer(customer))
-                    return RedirectToAction("Index");
-                else if (!_userAccess.IsAdmin(customer))
-                    orders = await _client.OrderClient.GetListAsync("Orders/Customer/" + customer.Id);
-                else
+                if (IsAdmin)
                     orders = await _client.OrderClient.GetListAsync("Orders");
+                else if (IsCustomer)
+                    orders = await _client.OrderClient.GetListAsync("Orders/Customer/" + Customer.Id);
+                else
+                    return RedirectToAction("Index");
 
                 if (orders == null)
                     return RedirectToAction("Index");

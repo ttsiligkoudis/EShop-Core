@@ -10,8 +10,10 @@ namespace Client
 
         public Client()
         {
-            var handler = new HttpClientHandler();
-            handler.UseDefaultCredentials = true;
+            var handler = new HttpClientHandler
+            {
+                UseDefaultCredentials = true
+            };
             _client = new HttpClient(handler);
             //#if DEBUG
             //    baseUrl = DeviceInfo.Current.Platform == DevicePlatform.Android ? "http://10.0.2.2:5010/api/" : "https://localhost:5011/api/";
@@ -29,7 +31,7 @@ namespace Client
             return default;
         }
 
-        public async Task<IEnumerable<T>> GetListAsync(string api)
+        public async Task<List<T>> GetListAsync(string api)
         {
             using (var response = await _client.GetAsync(baseUrl + api))
             {
@@ -76,7 +78,7 @@ namespace Client
             return default;
         }
 
-        public async Task<IEnumerable<T>> PostListAsync(IEnumerable<T> data, string api)
+        public async Task<List<T>> PostListAsync(IEnumerable<T> data, string api)
         {
             var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
             using (var response = await _client.PostAsync(baseUrl + api, content))

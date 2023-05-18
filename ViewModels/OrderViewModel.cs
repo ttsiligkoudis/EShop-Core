@@ -1,5 +1,4 @@
 ﻿using DataModels.Dtos;
-using DataModels;
 using System.ComponentModel.DataAnnotations;
 
 namespace ViewModels
@@ -8,8 +7,8 @@ namespace ViewModels
     {
         [Required]
         public OrderDto Order { get; set; }
-        public List<Customer> Customers { get; set; }
-        public List<Product> Products { get; set; }
+        public List<CustomerDto> Customers { get; set; }
+        public List<ProductDto> Products { get; set; }
         public List<OrderProductsDto> OrderProducts { get; set; }
         [Required(ErrorMessage = "Selecting a Product is Required")]
         [Display(Name = "Product")]
@@ -17,9 +16,9 @@ namespace ViewModels
 
         public OrderViewModel()
         {
-            Order = new OrderDto();
-            Customers = new List<Customer>();
-            OrderProducts = new List<OrderProductsDto>();
+            Order = new();
+            Customers = new();
+            OrderProducts = new();
         }
     }
 }

@@ -1,12 +1,12 @@
-﻿@using EShop.Helpers
+﻿@using DataModels.Dtos
 @model IEnumerable<DataModels.Dtos.ProductDto>
-@using ISession = EShop.Helpers.ISession
-@inject ISession Session
-@inject IUserAccess UserAccess
 @{
     ViewBag.Title = "Product";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var customer = Session.GetCustomer();
+    var customer = (CustomerDto)ViewBag.Customer;
+    var user = (UserDto)ViewBag.User;
+    bool isCustomer = ViewBag.IsCustomer ?? false;
+    bool isAdmin = ViewBag.IsAdmin ?? false;
 }
 
 <style>
@@ -20,7 +20,7 @@
 </style>
 
 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-@if (UserAccess.IsAdmin(customer))
+@if (isAdmin)
 {
     @Html.ActionLink("Create", "Create", "Products", "", new { @class = "btn btn-primary" })
 }
@@ -35,7 +35,7 @@
                 <th>Description</th>
                 <th>Price</th>
                 <th>Quantity</th>
-                @if (UserAccess.IsAdmin(customer))
+                @if (isAdmin)
                 {
                     <th class="col-lg-1"></th>
                 }
@@ -46,7 +46,7 @@
             {
                 <tr>
                     <td width="200px"><a href="@Url.Action("Details","Products", new { id = product.Id })"><img class="card-img-top align-middle" src="@product.Image" /></a></td>
-                    @if (UserAccess.IsAdmin(customer))
+                    @if (isAdmin)
                     {
                         <td>@Html.ActionLink(product.Name, "Edit", "Products", new { id = product.Id }, null)</td>
                     }
@@ -58,7 +58,7 @@
                     <td>@product.Description</td>
                     <td width="80px">@product.Price <i class="fa-solid fa-euro-sign"></i></td>
                     <td>@product.Quantity</td>
-                    @if (UserAccess.IsAdmin(customer))
+                    @if (isAdmin)
                     {
                         <td>@Html.ActionLink("Delete", "Delete", "Products", new { id = product.Id }, new { @class = "btn btn-delete btn-primary", id = "btn-delete" })</td>
                     }

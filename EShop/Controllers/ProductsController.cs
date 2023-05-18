@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AutoMapper;
 using DataModels.Dtos;
 using Enums;
 using EShop.Helpers;
@@ -11,13 +10,12 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ViewModels;
 using ViewModels.helpers;
-using ISession = EShop.Helpers.ISession;
 
 namespace EShop.Controllers
 {
     public class ProductsController : BaseController
     {
-        public ProductsController(IUserAccess userAccess, ISession session, IMapper mapper) : base(userAccess, session, mapper)
+        public ProductsController(IHttpContextAccessor accessor) : base(accessor)
         {
         }
 
@@ -61,8 +59,7 @@ namespace EShop.Controllers
                 Rates = (await _client.ProductRatesClient.GetListAsync("Products/Rates/" + id) ?? new List<ProductRatesDto>()).ToList()
             };
 
-            var cardProducts = _session.GetProducts();
-            ViewBag.ProductExistsInCart = cardProducts != null && cardProducts.Any(w => w.Id == id);
+            ViewBag.ProductExistsInCart = CartProducts?.Any(w => w.Id == id) ?? false;
 
             return View("Details", vm);
         }
@@ -111,13 +108,11 @@ namespace EShop.Controllers
             if (id == 0)
                 return null;
 
-            var products = _session.GetProducts();
-
             ProductDto product = null;
-            var cartExists = products != null && products.Any();
+            var cartExists = CartProducts?.Any() ?? false;
 
             if (cartExists)
-                product = products.Where(w => w.Id == id).FirstOrDefault();
+                product = CartProducts.Where(w => w.Id == id).FirstOrDefault();
 
             var productExistsInCart = product != null;
 
@@ -132,11 +127,11 @@ namespace EShop.Controllers
             {
                 if (cartExists && !productExistsInCart)
                 {
-                    products.Add(product);
+                    CartProducts.Add(product);
                 }
                 else if (!cartExists)
                 {
-                    products = new List<ProductDto>()
+                    CartProducts = new List<ProductDto>()
                     {
                         product
                     };
@@ -146,12 +141,12 @@ namespace EShop.Controllers
             {
                 if (cartExists && productExistsInCart)
                 {
-                    products.Remove(product);
+                    CartProducts.Remove(product);
                 }
             }
 
-            HttpContext.Session.SetString("Products", JsonConvert.SerializeObject(products));
-            return products;
+            SetProducts(CartProducts);
+            return CartProducts;
         }
 
         public async Task<IActionResult> GetRate(int productId, int customerId)
@@ -180,7 +175,7 @@ namespace EShop.Controllers
             }
             else
             {
-                rateDto = await _client.ProductRatesClient.PutAsync(rateDto, $"Products/Rate/{rateDto.Id}");
+                await _client.ProductRatesClient.PutAsync(rateDto, $"Products/Rate/{rateDto.Id}");
             }
 
             return new JsonResult(rateDto);

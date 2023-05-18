@@ -6,10 +6,17 @@
 @{
     ViewBag.Title = "Order";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var message = ViewBag.Message ?? string.Empty;
 }
 
 <h2>@ViewBag.Title</h2>
 <h3>@Model.Order.Customer.Name</h3>
+@if (!string.IsNullOrEmpty(message))
+{
+    <div class="alert alert-success" role="alert">
+        <i class="fas fa-check-circle"></i> @message
+    </div>
+}
 @if (!Model.Order.Completed)
 {
     @Html.ActionLink("Complete this order", "CompleteOrder", new { id = Model.Order.Id }, new { @class = "btn btn-primary" })

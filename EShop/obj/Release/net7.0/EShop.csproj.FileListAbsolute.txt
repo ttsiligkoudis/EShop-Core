@@ -8,8 +8,6 @@ C:\github\EShop-Core\EShop\bin\Release\net7.0\EShop.runtimeconfig.json
 C:\github\EShop-Core\EShop\bin\Release\net7.0\EShop.dll
 C:\github\EShop-Core\EShop\bin\Release\net7.0\EShop.pdb
 C:\github\EShop-Core\EShop\bin\Release\net7.0\EShop.xml
-C:\github\EShop-Core\EShop\bin\Release\net7.0\AutoMapper.dll
-C:\github\EShop-Core\EShop\bin\Release\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\github\EShop-Core\EShop\bin\Release\net7.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\github\EShop-Core\EShop\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\github\EShop-Core\EShop\bin\Release\net7.0\Microsoft.CodeAnalysis.dll
@@ -141,7 +139,6 @@ C:\github\EShop-Core\EShop\bin\Release\net7.0\NuGet.Protocol.dll
 C:\github\EShop-Core\EShop\bin\Release\net7.0\NuGet.Versioning.dll
 C:\github\EShop-Core\EShop\bin\Release\net7.0\System.Drawing.Common.dll
 C:\github\EShop-Core\EShop\bin\Release\net7.0\System.Reflection.MetadataLoadContext.dll
-C:\github\EShop-Core\EShop\bin\Release\net7.0\System.Text.Json.dll
 C:\github\EShop-Core\EShop\bin\Release\net7.0\System.Windows.Extensions.dll
 C:\github\EShop-Core\EShop\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
 C:\github\EShop-Core\EShop\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
@@ -258,3 +255,6 @@ C:\github\EShop-Core\EShop\bin\Release\net7.0\Google.Apis.Auth.PlatformServices.
 C:\github\EShop-Core\EShop\bin\Release\net7.0\Google.Apis.Auth.dll
 C:\github\EShop-Core\EShop\bin\Release\net7.0\Google.Apis.Core.dll
 C:\github\EShop-Core\EShop\bin\Release\net7.0\Google.Apis.Drive.v3.dll
+C:\github\EShop-Core\EShop\bin\Release\net7.0\Helpers.dll
+C:\github\EShop-Core\EShop\bin\Release\net7.0\Helpers.pdb
+C:\github\EShop-Core\EShop\bin\Release\net7.0\Microsoft.AspNetCore.Authentication.Google.dll

@@ -28,6 +28,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Helpers\ISession.cs" />
+    <Compile Remove="Helpers\IUserAccess.cs" />
+    <Compile Remove="Helpers\SelectList.cs" />
+    <Compile Remove="Helpers\Session.cs" />
+    <Compile Remove="Helpers\UserAccess.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
     <None Include="Views\Customers\CustomerForm.cshtml" />
     <None Include="Views\Customers\Index.cshtml" />
@@ -49,9 +57,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="12.0.1" />
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="Google.Apis.Drive.v3" Version="1.60.0.2986" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="7.0.5" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="System.Text.Json" Version="7.0.2" />
@@ -60,6 +67,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\EShopAPI\DataModels\DataModels.csproj" />
     <ProjectReference Include="..\..\EShopAPI\Enums\Enums.csproj" />
+    <ProjectReference Include="..\..\EShopMobile\Helpers\Helpers.csproj" />
     <ProjectReference Include="..\Helpers\Client.csproj" />
     <ProjectReference Include="..\ViewModels\ViewModels.csproj" />
   </ItemGroup>

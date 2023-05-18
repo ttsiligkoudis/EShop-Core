@@ -1,7 +1,8 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Rendering
 @model DataModels.Dtos.UserDto
 @{
-    ViewBag.Title = "Log in";
+    ViewBag.Title = "Login";
+    var passwordChangedMessage = ViewBag.PasswordChangedMessage ?? string.Empty;
 }
 
 <style>
@@ -11,13 +12,18 @@
     }
 </style>
 
-<h2>@ViewBag.Title.</h2>
+<h2>@ViewBag.Title</h2>
+@if (!string.IsNullOrEmpty(passwordChangedMessage))
+{
+    <div class="alert alert-success" role="alert">
+        <i class="fas fa-check-circle"></i> @passwordChangedMessage
+    </div>
+}
 <div class="row">
         <section id="loginForm">
             @using (Html.BeginForm("LoginViewResult", "Users", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
                 @Html.AntiForgeryToken()
-                <h4>Use a local account to log in.</h4>
                 <hr />
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="center">
@@ -26,15 +32,17 @@
                         @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
                     @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger valMessage" })
                     </div>
-                    <div class="form-group">
+                    <div class="margin-top-10 form-group">
                         @Html.LabelFor(m => m.Password, new { @class = "control-label" })
                         @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
                     @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger valMessage" })
                     </div>
                     <div class="margin-top-10" role="group">
-                        <input type="submit" value="Log in" class="btn btn-primary" />
-                    <a class="btn btn-primary" href="@Url.Action("Register","Users")">Register</a>
+                        <input type="submit" value="Login" class="btn btn-primary" />
+                        <a class="btn btn-primary" href="@Url.Action("Register","Users")">Register</a>
                     </div>
+                    <p class="margin-top-10"><a href="@Url.Action("ForgotPassword","Users")">Forgot Password?</a></p>
+                <a class="btn btn-secondary" href="@Url.Action("LoginWithGoogle","Users")"><i class="fa-brands fa-google"></i> Continue with Google</a>
                 </div>
             }
         </section>

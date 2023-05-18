@@ -7,14 +7,13 @@ C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\EShop.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\EShop.deps.json
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\EShop.runtimeconfig.json
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\EShop.pdb
-C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\AutoMapper.dll
-C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Google.Apis.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Google.Apis.Auth.PlatformServices.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Google.Apis.Auth.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Google.Apis.Core.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Google.Apis.Drive.v3.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Humanizer.dll
+C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.Google.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Microsoft.Build.dll
@@ -65,7 +64,6 @@ C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\System.Drawing.Common.d
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\System.Reflection.MetadataLoadContext.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\System.Security.Permissions.dll
-C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\System.Text.Json.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\System.Windows.Extensions.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\cs\Microsoft.CodeAnalysis.resources.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\de\Microsoft.CodeAnalysis.resources.dll
@@ -231,9 +229,11 @@ C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\runtimes\win\lib\net6.0
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Client.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\DataModels.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Enums.dll
+C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Helpers.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\ViewModels.dll
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\DataModels.pdb
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Enums.pdb
+C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Helpers.pdb
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\Client.pdb
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\ViewModels.pdb
 C:\github\EShop-Core\EShop\obj\Release\net7.0\PubTmp\Out\EShop.xml

@@ -2,71 +2,64 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AutoMapper;
-using Client;
-using DataModels;
 using DataModels.Dtos;
 using Enums;
-using EShop.Helpers;
+using Helpers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
-using Newtonsoft.Json;
 using ViewModels;
-using ISession = EShop.Helpers.ISession;
 
 namespace EShop.Controllers
 {
     public class OrdersController : BaseController
     {
-        public OrdersController(IUserAccess userAccess, ISession session, IMapper mapper) : base(userAccess, session, mapper)
+        public OrdersController(IHttpContextAccessor accessor) : base(accessor)
         {
         }
 
         public async Task<IActionResult> Index()
         {
-            IEnumerable<OrderDto> orders;
-            var customer = _session.GetCustomer();
-            if (!_userAccess.IsCustomer(customer))
-            {
-                return RedirectToAction("Index", "Home");
-            }
-            if (!_userAccess.IsAdmin(customer))
-            {
-                orders = await _client.OrderClient.GetListAsync("Orders/Customer/" + customer.Id);
-            }
-            else
-            {
+            List<OrderDto> orders;
+            if (IsAdmin)
                 orders = await _client.OrderClient.GetListAsync("Orders");
-            }
+            else if (IsCustomer)
+                orders = await _client.OrderClient.GetListAsync("Orders/Customer/" + Customer.Id);
+            else
+                return RedirectToAction("Index", "Home");
+
             return View(orders);
         }
 
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Edit(int id, bool newOrder = false)
         {
             var viewModel = new OrderViewModel
             {
                 Order = await _client.OrderClient.GetAsync("Orders/" + id),
                 OrderProducts = await _client.OrderProductClient.GetListAsync("Orders/" + id + "/Products") as List<OrderProductsDto>
             };
+
+            if (newOrder)
+                ViewBag.Message = "Your Order was completed successfully";
+
             return View("OrderForm", viewModel);
         }
 
         public async Task<IActionResult> Create()
         {
-            var customers = _mapper.Map<IEnumerable<Customer>>(await _client.CustomerClient.GetListAsync("Customers"));
-            var products = _mapper.Map<IEnumerable<Product>>(await _client.ProductClient.GetListAsync("Products/?checkQuantity=true"));
+            var customers = await _client.CustomerClient.GetListAsync("Customers");
+            var products = await _client.ProductClient.GetListAsync("Products/?checkQuantity=true");
             var viewModel = new OrderViewModel
             {
                 Customers = customers.ToList(),
                 Products = products.ToList()
             };
-            var customer = _session.GetCustomer();
-            if (_userAccess.IsCustomer(customer))
+
+            if (IsCustomer)
             {
-                viewModel.Order.Customer = _mapper.Map<CustomerDto>(customer);
-                viewModel.Order.CustomerId = customer.Id;
-                viewModel.Order.CustomerName = customer.Name;
+                viewModel.Order.Customer = Customer;
+                viewModel.Order.CustomerId = Customer.Id;
+                viewModel.Order.CustomerName = Customer.Name;
             }
 
             return View(viewModel);
@@ -77,8 +70,8 @@ namespace EShop.Controllers
             if (viewModel.ProductList.Length == 0)
             {
                 ModelState.AddModelError("", @"You need to select at least one Product");
-                var customers = _mapper.Map<IEnumerable<Customer>>(await _client.CustomerClient.GetListAsync("Customers"));
-                var products = _mapper.Map<IEnumerable<Product>>(await _client.ProductClient.GetListAsync("Products/?checkQuantity=true"));
+                var customers = await _client.CustomerClient.GetListAsync("Customers");
+                var products = await _client.ProductClient.GetListAsync("Products/?checkQuantity=true");
                 viewModel.Customers = customers.ToList();
                 viewModel.Products = products.ToList();
                 return View("Create", viewModel);
@@ -119,14 +112,14 @@ namespace EShop.Controllers
         }
         public async Task<IActionResult> Delete(int id)
         {
-            var customer = _session.GetCustomer();
-            if (!_userAccess.IsCustomer(customer))
+            var customer = GetCustomer();
+            if (IsCustomer)
             {
                 RedirectToAction("Index", "Home");
             }
             var order = await _client.OrderClient.GetAsync("Orders/" + id);
             if (order == null) return RedirectToAction("Index");
-            if (order.Completed && !_userAccess.IsAdmin(customer))
+            if (order.Completed && IsAdmin)
             {
                 ModelState.AddModelError("", @"Cannot delete a completed order");
                 return View("Index", await _client.OrderClient.GetListAsync("Orders/Customer/" + customer.Id));
@@ -149,7 +142,7 @@ namespace EShop.Controllers
 
         public  IActionResult Cart()
         {
-            var cartProducts = _session.GetProducts();
+            var cartProducts = GetProducts();
 
             if (cartProducts != null && cartProducts.Any())
                 ViewBag.FinalPrice = cartProducts.Sum(s => s.Price * s.Quantity);
@@ -158,13 +151,15 @@ namespace EShop.Controllers
             {
                 CartProducts = cartProducts
             };
-            var customer = _session.GetCustomer();
+            var customer = GetCustomer();
+            var user = GetUser();
             ViewBag.NewCustomer = customer == null;
-            customer ??= new Customer();
-            vm.RegisterVM.Customer = _mapper.Map<CustomerDto>(customer);
+            customer ??= new CustomerDto();
+            
+            vm.RegisterVM.Customer = customer;
             vm.RegisterVM.Email = vm.RegisterVM.Customer.Email;
-            vm.RegisterVM.Password = customer.User?.Password ?? "123456";
-            vm.RegisterVM.ConfirmPassword = customer.User?.Password ?? "123456";
+            vm.RegisterVM.Password = user?.Password ?? "123456";
+            vm.RegisterVM.ConfirmPassword = user?.Password ?? "123456";
 
             return View(vm);
         }
@@ -211,9 +206,8 @@ namespace EShop.Controllers
 
                     vm.RegisterVM.Customer = await _client.CustomerClient.PostAsync(vm.RegisterVM.Customer, "Customers");
 
-                    var customer = _mapper.Map<Customer>(vm.RegisterVM.Customer);
-                    customer.User = _mapper.Map<User>(user);
-                    HttpContext.Session.SetString("Customer", JsonConvert.SerializeObject(_mapper.Map<Customer>(customer)));
+                    SetCustomer(vm.RegisterVM.Customer);
+                    SetUser(user);
                 }
                 else
                 {
@@ -248,6 +242,15 @@ namespace EShop.Controllers
 
             orderProductsDto = (await _client.OrderProductClient.PostListAsync(orderProductsDto, "Orders/" + orderDto.Id + "/Products")).ToList();
             HttpContext.Session.SetString("Products", string.Empty);
+
+            var message = new MessageDto
+            {
+                Email = orderDto.Customer.Email,
+                Subject = "Order Details",
+                Body = EmailHelper.CreateOrderHtml(orderDto.Customer, vm.CartProducts, orderDto.Id, "Order Details")
+            };
+
+            await _client.MessagesClient.PostAsync(message, $"Messages/SendMessage");
 
             return new JsonResult(orderDto.Id);
         }
