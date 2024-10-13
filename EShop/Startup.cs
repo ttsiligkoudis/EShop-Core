@@ -15,6 +15,7 @@ using System.Globalization;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authentication;
+using FilesClient;
 
 namespace EShop
 {
@@ -31,8 +32,12 @@ namespace EShop
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDistributedMemoryCache();
-            services.AddHttpContextAccessor();
 
+            services.AddHttpClient<Client.IClient, Client.Client>();
+
+            services.AddHttpContextAccessor();
+            services.AddSingleton(new FilesClientHandler(Configuration["Authentication:FileService:Token"], "eshop.myportofolio.eu"));
+            services.AddSingleton(Configuration);
             services.AddSession(options => {
                 options.IdleTimeout = TimeSpan.FromHours(10);
                 //options.Cookie.HttpOnly = true;
@@ -60,15 +65,15 @@ namespace EShop
                 }
             });
 
-            services.AddHttpClient("myServiceClient")
-                .ConfigureHttpClient(client =>
-                {
-                    client.BaseAddress = new Uri("https://eshopapi.myportofolio.eu/api");
-                    client.Timeout = TimeSpan.FromSeconds(5);
-                })
-                .ConfigurePrimaryHttpMessageHandler(
-                    () => new HttpClientHandler() { CookieContainer = new CookieContainer() }
-                );
+            //services.AddHttpClient("myServiceClient")
+            //    .ConfigureHttpClient(client =>
+            //    {
+            //        client.BaseAddress = new Uri("https://eshopapi.myportofolio.eu/api");
+            //        client.Timeout = TimeSpan.FromSeconds(5);
+            //    })
+            //    .ConfigurePrimaryHttpMessageHandler(
+            //        () => new HttpClientHandler() { CookieContainer = new CookieContainer() }
+            //    );
 
             services.AddAuthentication(o =>
             {

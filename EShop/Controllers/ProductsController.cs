@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Client;
 using DataModels.Dtos;
 using Enums;
 using EShop.Helpers;
+using FilesClient;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using ViewModels;
 using ViewModels.helpers;
@@ -15,14 +19,18 @@ namespace EShop.Controllers
 {
     public class ProductsController : BaseController
     {
-        public ProductsController(IHttpContextAccessor accessor) : base(accessor)
+        public ProductsController(
+            IHttpContextAccessor accessor, 
+            IConfiguration configuration, 
+            IClient client, 
+            FilesClientHandler filesClient) : base(accessor, configuration, client, filesClient)
         {
         }
 
         public async Task<IActionResult> AdminIndex(Category? category = null)
         {
             var str = "Products" + (category.HasValue ? "/?category=" + category.Value.ToString() : "");
-            var products = await _client.ProductClient.GetListAsync(str);
+            var products = await _client.GetAsync<List<ProductDto>>(str);
             return View(products);
         }
 
@@ -31,7 +39,7 @@ namespace EShop.Controllers
             var str = "Products";
             if (Enum.TryParse<Category>(id.ToString(), out var category))
                 str += "/?category=" + category.ToString();
-            var products = await _client.ProductClient.GetListAsync(str);
+            var products = await _client.GetAsync<List<ProductDto>>(str);
             return View(products);
         }
 
@@ -43,7 +51,7 @@ namespace EShop.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
-            var product = await _client.ProductClient.GetAsync("Products/" + id);
+            var product = await _client.GetAsync<ProductDto>("Products/" + id);
             if (product == null) return RedirectToAction("AdminIndex", "Products");
 
             return View("ProductForm", product);
@@ -51,12 +59,12 @@ namespace EShop.Controllers
 
         public async Task<IActionResult> Details(int id)
         {
-            var product = await _client.ProductClient.GetAsync("Products/" + id);
+            var product = await _client.GetAsync<ProductDto>("Products/" + id);
             if (product == null) return RedirectToAction("Index", "Products");
             var vm = new ProductViewModel
             {
                 Product = product,
-                Rates = (await _client.ProductRatesClient.GetListAsync("Products/Rates/" + id) ?? new List<ProductRatesDto>()).ToList()
+                Rates = (await _client.GetAsync<List<ProductRatesDto>>("Products/Rates/" + id) ?? new List<ProductRatesDto>()).ToList()
             };
 
             ViewBag.ProductExistsInCart = CartProducts?.Any(w => w.Id == id) ?? false;
@@ -67,38 +75,40 @@ namespace EShop.Controllers
         [HttpPost]
         public async Task<IActionResult> Save(ProductDto product, IFormFile Image)
         {
-            //using (var stream = new MemoryStream())
-            //{
-            //    await Image.CopyToAsync(stream);
-            //    product.Image = stream.ToArray();
-            //}
-
+            
             if (Image != null)
             {
-                var gDrive = new GoogleDrive();
+                using var stream = Image.OpenReadStream();
+                var key = (product.Image?.Contains("fileservice") ?? false) ? product.Image : null;
+                var uploadResult = await FilesClient.UploadFileAsync(stream, Image.FileName, Image.ContentType, true, key);
+                if (uploadResult.Item1)
+                {
+                    product.Image = uploadResult.Item2;
+                }
+                //var gDrive = new GoogleDrive();
                 //product.Image = await gDrive.UploadFile(Image, product.Category);
             }
 
             if (product.Id == 0)
-                await _client.ProductClient.PostAsync(product, "Products");
+                await _client.PostAsync(product, "Products");
             else
-                await _client.ProductClient.PutAsync(product, "Products/" + product.Id);
+                await _client.PutAsync(product, "Products/" + product.Id);
 
             return RedirectToAction("AdminIndex");
         }
 
         public async Task<IActionResult> Delete(int id)
         {
-            var product = await _client.ProductClient.GetAsync("Products/" + id);
+            var product = await _client.GetAsync<ProductDto>("Products/" + id);
             if (product != null)
             {
-                var orderProducts = await _client.OrderProductClient.GetListAsync("Orders/Products/" + id);
+                var orderProducts = await _client.GetAsync<List<OrderProductsDto>>("Orders/Products/" + id);
                 if (orderProducts != null && orderProducts.Any())
                 {
                     ModelState.AddModelError("", @"Cannot delete a product that is already ordered");
-                    return View("AdminIndex", await _client.ProductClient.GetListAsync("Products"));
+                    return View("AdminIndex", await _client.GetAsync<List<ProductDto>>("Products"));
                 }
-                await _client.ProductClient.DeleteAsync(id, "Products/" + id);
+                await _client.DeleteAsync($"Products/{id}");
             }
             return RedirectToAction("AdminIndex");
         }
@@ -116,7 +126,7 @@ namespace EShop.Controllers
 
             var productExistsInCart = product != null;
 
-            product ??= await _client.ProductClient.GetAsync("Products/" + id);
+            product ??= await _client.GetAsync<ProductDto>("Products/" + id);
 
             if (product == null)
                 return null;
@@ -156,7 +166,7 @@ namespace EShop.Controllers
                 return null;
             }
 
-            var rate = await _client.ProductRatesClient.GetAsync($"Products/Rate/?productId={productId}&customerId={customerId}");
+            var rate = await _client.GetAsync<ProductRatesDto>($"Products/Rate/?productId={productId}&customerId={customerId}");
 
             return new JsonResult(rate);
         }
@@ -171,11 +181,11 @@ namespace EShop.Controllers
 
             if (rateDto.Id == 0)
             {
-                rateDto = await _client.ProductRatesClient.PostAsync(rateDto, "Products/Rate");
+                rateDto = await _client.PostAsync(rateDto, "Products/Rate");
             }
             else
             {
-                await _client.ProductRatesClient.PutAsync(rateDto, $"Products/Rate/{rateDto.Id}");
+                await _client.PutAsync(rateDto, $"Products/Rate/{rateDto.Id}");
             }
 
             return new JsonResult(rateDto);

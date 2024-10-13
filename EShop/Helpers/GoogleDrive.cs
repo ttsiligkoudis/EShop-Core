@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 using System.Threading;
 using Enums;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using Microsoft.Extensions.Configuration;
 
 namespace EShop.Helpers
 {
@@ -19,6 +19,12 @@ namespace EShop.Helpers
         private string _folder { get; set; }
         private UserCredential _credential { get; set; }
         private DriveService _service { get; set; }
+        private IConfiguration _configuration { get; set; }
+
+        public GoogleDrive(IConfiguration configuration)
+        {
+            _configuration = configuration;  
+        }
 
         public async Task GetService()
         {
@@ -26,7 +32,11 @@ namespace EShop.Helpers
             using (var stream = new FileStream("GDriveCreds.json", FileMode.Open, FileAccess.Read))
             {
                 _credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
-                        GoogleClientSecrets.FromStream(stream).Secrets,
+                        new ClientSecrets
+                        {
+                            ClientId = _configuration["Authentication:GDrive:ClientId"],
+                            ClientSecret = _configuration["Authentication:GDrive:ClientSecret"],
+                        },
                         _scopes,
                         "user",
                         CancellationToken.None,

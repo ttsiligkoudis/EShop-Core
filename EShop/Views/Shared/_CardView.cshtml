@@ -47,7 +47,7 @@
             <div class="custom-card card text-center">
                 <h5 class="card-title">@item.Name</h5>
                 <div class="card-imgDiv">
-                    <a href="@Url.Action("Details","Products", new { id = item.Id })"><img class="card-img-top align-middle" src="@item.Image" /></a>
+                    <a href="@Url.Action("Details","Products", new { id = item.Id })"><img class="card-img-top align-middle" src="@item.Image" async /></a>
                 </div>
                 <div class="card-body">
                     <p class="card-text">Price: @item.Price <i class="fa-solid fa-euro-sign"></i></p>

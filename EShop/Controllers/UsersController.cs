@@ -10,17 +10,21 @@ using Microsoft.AspNetCore.Mvc;
 using ViewModels;
 using Microsoft.AspNetCore.Authentication.Google;
 using System.Linq;
-using System.Text;
-using Microsoft.Extensions.Options;
-using System.Net.Http;
-using System.Net.Http.Headers;
 using Newtonsoft.Json;
+using Microsoft.Extensions.Configuration;
+using Client;
+using System.Collections.Generic;
+using FilesClient;
 
 namespace EShop.Controllers
 {
     public class UsersController : BaseController
     {
-        public UsersController(IHttpContextAccessor accessor) : base(accessor)
+        public UsersController(
+            IHttpContextAccessor accessor, 
+            IConfiguration configuration, 
+            IClient client,
+            FilesClientHandler filesClient) : base(accessor, configuration, client, filesClient)
         {
         }
 
@@ -31,7 +35,7 @@ namespace EShop.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            var users = await _client.UserClient.GetListAsync("Users");
+            var users = await _client.GetAsync<List<UserDto>>("Users");
             return View(users);
         }
 
@@ -43,7 +47,7 @@ namespace EShop.Controllers
         public async Task<IActionResult> RegisterViewResult(RegisterViewModel viewModel)
         {
             if (!ModelState.IsValid) return View("Register", viewModel);
-            var user = await _client.UserClient.GetAsync("Users/GetUserByEmail/?email=" + viewModel.Email);
+            var user = await _client.GetAsync<UserDto>("Users/GetUserByEmail/?email=" + viewModel.Email);
             if (user != null)
             {
                 ModelState.AddModelError("", @"Email already exists");
@@ -58,13 +62,13 @@ namespace EShop.Controllers
                 UserType = UserType.User
             };
 
-            user = await _client.UserClient.PostAsync(user, "Users");
+            user = await _client.PostAsync(user, "Users");
             user.Password = viewModel.Password;
 
             viewModel.Customer.UserId = user.Id;
             viewModel.Customer.RegDate = user.RegDate;
             viewModel.Customer.Email = user.Email;
-            viewModel.Customer = await _client.CustomerClient.PostAsync(viewModel.Customer, "Customers");
+            viewModel.Customer = await _client.PostAsync(viewModel.Customer, "Customers");
 
             var message = new MessageDto
             {
@@ -73,7 +77,7 @@ namespace EShop.Controllers
                 Body = EmailHelper.NewUserCreatedHtml(viewModel.Customer, user, "New User Created")
             };
 
-            await _client.MessagesClient.PostAsync(message, $"Messages/SendMessage");
+            await _client.PostAsync(message, $"Messages/SendMessage");
 
             return RedirectToAction("LoginViewResult", user);
         }
@@ -91,7 +95,7 @@ namespace EShop.Controllers
                 return View("Login", user);
             }
 
-            var userInDb = await _client.UserClient.GetAsync("Users/GetUserByEmailAndPassword/?email=" + user.Email + "&password=" + user.Password);
+            var userInDb = await _client.GetAsync<UserDto>("Users/GetUserByEmailAndPassword/?email=" + user.Email + "&password=" + user.Password);
             if (userInDb == null)
             {
                 ModelState.AddModelError("", @"Invalid email or password");
@@ -99,13 +103,13 @@ namespace EShop.Controllers
             }
 
             userInDb.LoginDate = DateTime.Now;
-            var customer = await _client.CustomerClient.GetAsync("Customers/User/" + userInDb.Id);
+            var customer = await _client.GetAsync<CustomerDto>("Customers/User/" + userInDb.Id);
             if (customer != null)
             {
                 SetCustomer(customer);
                 SetUser(userInDb);
             }
-            await _client.UserClient.PutAsync(userInDb, "Users/" + userInDb.Id);
+            await _client.PutAsync(userInDb, "Users/" + userInDb.Id);
             return RedirectToAction("Index", "Home");
         }
 
@@ -120,8 +124,8 @@ namespace EShop.Controllers
         {
             var viewModel = new UserViewModel
             {
-                User = await _client.UserClient.GetAsync("Users/" + id),
-                Customer = await _client.CustomerClient.GetAsync("Customers/User/" + id)
+                User = await _client.GetAsync<UserDto>("Users/" + id),
+                Customer = await _client.GetAsync<CustomerDto>("Customers/User/" + id)
             };
             return viewModel.User == null || viewModel.Customer == null
                 ? (ActionResult)RedirectToAction("Index", "Home")
@@ -130,11 +134,11 @@ namespace EShop.Controllers
 
         public async Task<IActionResult> ConvertToAdmin(int id)
         {
-            var user = await _client.UserClient.GetAsync("Users/" + id);
+            var user = await _client.GetAsync<UserDto>("Users/" + id);
             if (user != null)
             {
                 user.UserType = UserType.Admin;
-                await _client.UserClient.PutAsync(user, "Users/" + user.Id);
+                await _client.PutAsync(user, "Users/" + user.Id);
             }
             return RedirectToAction("Index", "Users");
         }
@@ -147,7 +151,7 @@ namespace EShop.Controllers
         [HttpPost]
         public async Task<IActionResult> ForgotPassword(string email)
         {
-            var user = await _client.UserClient.GetAsync("Users/GetUserByEmail/?email=" + email);
+            var user = await _client.GetAsync<UserDto>("Users/GetUserByEmail/?email=" + email);
             if (user == null)
             {
                 ModelState.AddModelError("", @"Email does not exist");
@@ -156,7 +160,7 @@ namespace EShop.Controllers
 
             var token = Guid.NewGuid().ToString();
             user.PasswordResetToken = token;
-            await _client.UserClient.PutAsync(user, "Users/" + user.Id);
+            await _client.PutAsync(user, "Users/" + user.Id);
 
             var message = new MessageDto
             {
@@ -165,7 +169,7 @@ namespace EShop.Controllers
                 Body = EmailHelper.PasswordResetHtml(user, "Password Reset")
             };
 
-            await _client.MessagesClient.PostAsync(message, $"Messages/SendMessage");
+            await _client.PostAsync(message, $"Messages/SendMessage");
             ViewBag.MessageSent = "An email was sent successfully, please follow the email instructions to reset your password.";
 
             return View();
@@ -173,7 +177,7 @@ namespace EShop.Controllers
 
         public async Task<IActionResult> ResetPassword(int userID, string token)
         {
-            var user = await _client.UserClient.GetAsync("Users/" + userID);
+            var user = await _client.GetAsync<UserDto>("Users/" + userID);
 
             if (user == null || user.PasswordResetToken != token)
             {
@@ -195,7 +199,7 @@ namespace EShop.Controllers
             if (!ModelState.IsValid)
                 return View("ResetPassword", viewModel);
 
-            var user = await _client.UserClient.GetAsync("Users/GetUserByEmail/?email=" + viewModel.Email);
+            var user = await _client.GetAsync<UserDto>("Users/GetUserByEmail/?email=" + viewModel.Email);
 
             if (user == null || user.PasswordResetToken != viewModel.PasswordResetToken)
             {
@@ -205,7 +209,7 @@ namespace EShop.Controllers
 
             user.Password = viewModel.Password;
             user.PasswordResetToken = null;
-            await _client.UserClient.PutAsync(user, "Users/" + user.Id);
+            await _client.PutAsync(user, "Users/" + user.Id);
 
             ViewBag.PasswordChangedMessage = "Password changed successfully, please procced with log in";
 
@@ -229,7 +233,7 @@ namespace EShop.Controllers
                 var accessToken = await HttpContext.GetTokenAsync("access_token");
                 var identity = authResult.Principal.Identities.FirstOrDefault();
 
-                (var customer, var user) = await GoogleHelper.GetSSOResponse(identity, accessToken, _client.CustomerClient, _client.UserClient, _client.MessagesClient);
+                (var customer, var user) = await GoogleHelper.GetSSOResponse(identity, accessToken, _client);
 
                 SetUser(user);
                 SetCustomer(customer);
@@ -247,7 +251,7 @@ namespace EShop.Controllers
                 var accessToken = await HttpContext.GetTokenAsync("access_token");
                 var identity = authResult.Principal.Identities.FirstOrDefault();
 
-                (var customer, var user) = await GoogleHelper.GetSSOResponse(identity, accessToken, _client.CustomerClient, _client.UserClient, _client.MessagesClient);
+                (var customer, var user) = await GoogleHelper.GetSSOResponse(identity, accessToken, _client);
 
                 return RedirectToAction("Index", "Home", new 
                 { 

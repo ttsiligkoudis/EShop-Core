@@ -1,9 +1,11 @@
 ﻿using Client;
 using DataModels.Dtos;
 using Enums;
+using FilesClient;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using static Newtonsoft.Json.JsonConvert;
 
@@ -11,24 +13,28 @@ namespace EShop.Controllers
 {
     public class BaseController : Controller
     {
-        protected ClientHelper _client;
+        protected IClient _client;
         protected CustomerDto Customer { get; set; }
         protected new UserDto User { get; set; }
         protected bool IsAdmin { get; set; }
         protected bool IsCustomer { get; set; }
         protected List<ProductDto> CartProducts { get; set; }
         protected new HttpContext HttpContext { get; set; }
+        protected IConfiguration Configuration { get; set; }
+        protected FilesClientHandler FilesClient { get; set; }
 
-        public BaseController(IHttpContextAccessor accessor)
+        public BaseController(IHttpContextAccessor accessor, IConfiguration configuration, IClient client, FilesClientHandler filesClient)
         {
-            _client = new ClientHelper();
+            _client = client;
             HttpContext = accessor.HttpContext;
+            Configuration = configuration;
 
             User = GetUser();
             Customer = GetCustomer();
             IsAdmin = CheckUserType(UserType.Admin);
             IsCustomer = CheckUserType(UserType.User);
             CartProducts = GetProducts();
+            FilesClient = filesClient;
         }
 
         public override void OnActionExecuted(ActionExecutedContext context)

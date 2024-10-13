@@ -3,12 +3,20 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DataModels.Dtos;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+using Client;
+using System.Collections.Generic;
+using FilesClient;
 
 namespace EShop.Controllers
 {
     public class CustomersController : BaseController
     {
-        public CustomersController(IHttpContextAccessor accessor) : base(accessor)
+        public CustomersController(
+            IHttpContextAccessor accessor, 
+            IConfiguration configuration, 
+            IClient client,
+            FilesClientHandler filesClient) : base(accessor, configuration, client, filesClient)
         {
         }
 
@@ -18,7 +26,7 @@ namespace EShop.Controllers
             {
                 throw new AccessViolationException();
             }
-            var customers = await _client.CustomerClient.GetListAsync("Customers");
+            var customers = await _client.GetAsync<List<CustomerDto>>("Customers");
             return View(customers);
         }
 
@@ -33,7 +41,7 @@ namespace EShop.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
-            var customer = await _client.CustomerClient.GetAsync("Customers/" + id);
+            var customer = await _client.GetAsync<CustomerDto>("Customers/" + id);
             if (customer == null)
             {
                 throw new NullReferenceException();
@@ -50,27 +58,24 @@ namespace EShop.Controllers
             }
             if (customer.Id == 0)
             {
-                await _client.CustomerClient.PostAsync(customer, "Customers");
+                await _client.PostAsync(customer, "Customers");
             }
             else
             {
-                await _client.CustomerClient.PutAsync(customer, "Customers/" + customer.Id);
+                await _client.PutAsync(customer, "Customers/" + customer.Id);
             }
             return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> Delete(int id)
         {
-            var customer = await _client.CustomerClient.GetAsync("Customers/" + id) ?? throw new NullReferenceException();
+            var customer = await _client.GetAsync<CustomerDto>("Customers/" + id) ?? throw new NullReferenceException();
 
             var loggedCustomer = Customer;
-            if (loggedCustomer?.Id == customer.Id)
-            {
-                await _client.CustomerClient.DeleteAsync(id, "Customers/" + id);
-                return RedirectToAction("Logout", "Users", customer.UserId);
-            }
+            await _client.DeleteAsync($"Customers/{id}");
 
-            await _client.CustomerClient.DeleteAsync(id, "Customers/" + id);
+            if (loggedCustomer?.Id == customer.Id) return RedirectToAction("Logout", "Users", customer.UserId);
+
             return RedirectToAction("Index");
         }
     }

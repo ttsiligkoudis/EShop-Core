@@ -45,7 +45,7 @@
             @foreach (var product in Model)
             {
                 <tr>
-                    <td width="200px"><a href="@Url.Action("Details","Products", new { id = product.Id })"><img class="card-img-top align-middle" src="@product.Image" /></a></td>
+                    <td width="200px"><a href="@Url.Action("Details","Products", new { id = product.Id })"><img class="card-img-top align-middle" src="@product.Image" async /></a></td>
                     @if (isAdmin)
                     {
                         <td>@Html.ActionLink(product.Name, "Edit", "Products", new { id = product.Id }, null)</td>

@@ -68,14 +68,9 @@
     <ProjectReference Include="..\..\EShopAPI\DataModels\DataModels.csproj" />
     <ProjectReference Include="..\..\EShopAPI\Enums\Enums.csproj" />
     <ProjectReference Include="..\..\EShopMobile\Helpers\Helpers.csproj" />
+    <ProjectReference Include="..\..\FilesClient\FilesClient.csproj" />
     <ProjectReference Include="..\Helpers\Client.csproj" />
     <ProjectReference Include="..\ViewModels\ViewModels.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Update="GDriveCreds.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
 </Project>

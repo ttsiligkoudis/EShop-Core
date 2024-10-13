@@ -2,19 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Client;
 using DataModels.Dtos;
 using Enums;
+using FilesClient;
 using Helpers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Configuration;
 using ViewModels;
 
 namespace EShop.Controllers
 {
     public class OrdersController : BaseController
     {
-        public OrdersController(IHttpContextAccessor accessor) : base(accessor)
+        public OrdersController(
+            IHttpContextAccessor accessor, 
+            IConfiguration configuration, 
+            IClient client,
+            FilesClientHandler filesClient) : base(accessor, configuration, client, filesClient)
         {
         }
 
@@ -22,9 +29,9 @@ namespace EShop.Controllers
         {
             List<OrderDto> orders;
             if (IsAdmin)
-                orders = await _client.OrderClient.GetListAsync("Orders");
+                orders = await _client.GetAsync<List<OrderDto>>("Orders");
             else if (IsCustomer)
-                orders = await _client.OrderClient.GetListAsync("Orders/Customer/" + Customer.Id);
+                orders = await _client.GetAsync<List<OrderDto>>("Orders/Customer/" + Customer.Id);
             else
                 return RedirectToAction("Index", "Home");
 
@@ -35,8 +42,8 @@ namespace EShop.Controllers
         {
             var viewModel = new OrderViewModel
             {
-                Order = await _client.OrderClient.GetAsync("Orders/" + id),
-                OrderProducts = await _client.OrderProductClient.GetListAsync("Orders/" + id + "/Products") as List<OrderProductsDto>
+                Order = await _client.GetAsync<OrderDto>("Orders/" + id),
+                OrderProducts = await _client.GetAsync<List<OrderProductsDto>>("Orders/" + id + "/Products") as List<OrderProductsDto>
             };
 
             if (newOrder)
@@ -47,8 +54,8 @@ namespace EShop.Controllers
 
         public async Task<IActionResult> Create()
         {
-            var customers = await _client.CustomerClient.GetListAsync("Customers");
-            var products = await _client.ProductClient.GetListAsync("Products/?checkQuantity=true");
+            var customers = await _client.GetAsync<List<CustomerDto>>("Customers");
+            var products = await _client.GetAsync<List<ProductDto>>("Products/?checkQuantity=true");
             var viewModel = new OrderViewModel
             {
                 Customers = customers.ToList(),
@@ -70,8 +77,8 @@ namespace EShop.Controllers
             if (viewModel.ProductList.Length == 0)
             {
                 ModelState.AddModelError("", @"You need to select at least one Product");
-                var customers = await _client.CustomerClient.GetListAsync("Customers");
-                var products = await _client.ProductClient.GetListAsync("Products/?checkQuantity=true");
+                var customers = await _client.GetAsync<List<CustomerDto>>("Customers");
+                var products = await _client.GetAsync<List<ProductDto>>("Products/?checkQuantity=true");
                 viewModel.Customers = customers.ToList();
                 viewModel.Products = products.ToList();
                 return View("Create", viewModel);
@@ -79,7 +86,7 @@ namespace EShop.Controllers
 
             if (viewModel.Order.CustomerId == 0)
             {
-                viewModel.Order.Customer = await _client.CustomerClient.PostAsync(viewModel.Order.Customer, "Customers");
+                viewModel.Order.Customer = await _client.PostAsync(viewModel.Order.Customer, "Customers");
                 viewModel.Order.CustomerId = viewModel.Order.Customer.Id;
             }
 
@@ -87,16 +94,16 @@ namespace EShop.Controllers
             {
                 viewModel.Order.Customer = null;
                 viewModel.Order.OrderDate = DateTime.Now;
-                viewModel.Order = await _client.OrderClient.PostAsync(viewModel.Order, "Orders");
+                viewModel.Order = await _client.PostAsync(viewModel.Order, "Orders");
             }
-            viewModel.Order.Customer = await _client.CustomerClient.GetAsync("Customers/" + viewModel.Order.CustomerId);
-            var productsDto = await _client.ProductClient.GetListAsync("Products");
+            viewModel.Order.Customer = await _client.GetAsync<CustomerDto>("Customers/" + viewModel.Order.CustomerId);
+            var productsDto = await _client.GetAsync<List<ProductDto>>("Products");
             productsDto = productsDto.Where(p => viewModel.ProductList.Contains(p.Id)).ToList();
             foreach (var product in productsDto)
             {
                 viewModel.Order.FinalPrice += product.Price;
                 product.Quantity--;
-                await _client.ProductClient.PutAsync(product, "Products/" + product.Id);
+                await _client.PutAsync(product, "Products/" + product.Id);
                 viewModel.OrderProducts.Add(new OrderProductsDto()
                 {
                     OrderId = viewModel.Order.Id,
@@ -105,8 +112,8 @@ namespace EShop.Controllers
                     ProductName = product.Name
                 });
             }
-            viewModel.OrderProducts = await _client.OrderProductClient.PostListAsync(viewModel.OrderProducts, "Orders/" + viewModel.Order.Id + "/Products") as List<OrderProductsDto>;
-            viewModel.Order = await _client.OrderClient.PutAsync(viewModel.Order, "Orders/" + viewModel.Order.Id);
+            viewModel.OrderProducts = await _client.PostAsync(viewModel.OrderProducts, "Orders/" + viewModel.Order.Id + "/Products") as List<OrderProductsDto>;
+            viewModel.Order = await _client.PutAsync(viewModel.Order, "Orders/" + viewModel.Order.Id);
             return RedirectToAction("Edit", new RouteValueDictionary(
                 new { controller = "Orders", action = "Edit", viewModel.Order.Id }));
         }
@@ -117,25 +124,25 @@ namespace EShop.Controllers
             {
                 RedirectToAction("Index", "Home");
             }
-            var order = await _client.OrderClient.GetAsync("Orders/" + id);
+            var order = await _client.GetAsync<OrderDto>("Orders/" + id);
             if (order == null) return RedirectToAction("Index");
             if (order.Completed && IsAdmin)
             {
                 ModelState.AddModelError("", @"Cannot delete a completed order");
-                return View("Index", await _client.OrderClient.GetListAsync("Orders/Customer/" + customer.Id));
+                return View("Index", await _client.GetAsync<List<OrderDto>>("Orders/Customer/" + customer.Id));
             }
 
-            await _client.OrderClient.DeleteAsync(id, "Orders/" + id);
+            await _client.DeleteAsync($"Orders/{id}");
             return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> CompleteOrder(int id)
         {
-            var order = await _client.OrderClient.GetAsync("Orders/" + id);
+            var order = await _client.GetAsync<OrderDto>("Orders/" + id);
             if (order != null)
             {
                 order.Completed = true;
-                await _client.OrderClient.PutAsync(order, "Orders/" + order.Id);
+                await _client.PutAsync(order, "Orders/" + order.Id);
             }
             return RedirectToAction("Index");
         }
@@ -187,7 +194,7 @@ namespace EShop.Controllers
             {
                 if (vm.CreateAccount)
                 {
-                    var user = await _client.UserClient.GetAsync("Users/GetUserByEmail/?email=" + vm.RegisterVM.Email);
+                    var user = await _client.GetAsync<UserDto>("Users/GetUserByEmail/?email=" + vm.RegisterVM.Email);
                     if (user != null)
                     {
                         ModelState.AddModelError("", @"Email already exists");
@@ -201,21 +208,21 @@ namespace EShop.Controllers
                         LoginDate = DateTime.Now,
                         UserType = UserType.User
                     };
-                    user = await _client.UserClient.PostAsync(user, "Users");
+                    user = await _client.PostAsync(user, "Users");
                     vm.RegisterVM.Customer.UserId = user.Id;
 
-                    vm.RegisterVM.Customer = await _client.CustomerClient.PostAsync(vm.RegisterVM.Customer, "Customers");
+                    vm.RegisterVM.Customer = await _client.PostAsync(vm.RegisterVM.Customer, "Customers");
 
                     SetCustomer(vm.RegisterVM.Customer);
                     SetUser(user);
                 }
                 else
                 {
-                    vm.RegisterVM.Customer = await _client.CustomerClient.PostAsync(vm.RegisterVM.Customer, "Customers");
+                    vm.RegisterVM.Customer = await _client.PostAsync(vm.RegisterVM.Customer, "Customers");
                 }
             }
 
-            vm.CartProducts = await _client.ProductClient.PutListAsync(vm.CartProducts, "Products");
+            vm.CartProducts = await _client.PutAsync(vm.CartProducts, "Products");
 
             var orderDto = new OrderDto
             {
@@ -226,7 +233,7 @@ namespace EShop.Controllers
                 Completed = true
             };
 
-            orderDto = await _client.OrderClient.PostAsync(orderDto, "Orders");
+            orderDto = await _client.PostAsync(orderDto, "Orders");
             orderDto.Customer = vm.RegisterVM.Customer;
 
             var orderProductsDto = vm.CartProducts
@@ -240,7 +247,7 @@ namespace EShop.Controllers
                 })
                 .ToList();
 
-            orderProductsDto = (await _client.OrderProductClient.PostListAsync(orderProductsDto, "Orders/" + orderDto.Id + "/Products")).ToList();
+            orderProductsDto = (await _client.PostAsync(orderProductsDto, "Orders/" + orderDto.Id + "/Products")).ToList();
             HttpContext.Session.SetString("Products", string.Empty);
 
             var message = new MessageDto
@@ -250,7 +257,7 @@ namespace EShop.Controllers
                 Body = EmailHelper.CreateOrderHtml(orderDto.Customer, vm.CartProducts, orderDto.Id, "Order Details")
             };
 
-            await _client.MessagesClient.PostAsync(message, $"Messages/SendMessage");
+            await _client.PostAsync(message, $"Messages/SendMessage");
 
             return new JsonResult(orderDto.Id);
         }

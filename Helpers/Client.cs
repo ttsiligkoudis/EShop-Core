@@ -3,24 +3,17 @@ using System.Text;
 
 namespace Client
 {
-    public class Client<T>
+    public class Client : IClient
     {
         private readonly HttpClient _client;
         private readonly string baseUrl = "https://eshopapi.myportofolio.eu/api/";
 
-        public Client()
+        public Client(HttpClient client)
         {
-            var handler = new HttpClientHandler
-            {
-                UseDefaultCredentials = true
-            };
-            _client = new HttpClient(handler);
-            //#if DEBUG
-            //    baseUrl = DeviceInfo.Current.Platform == DevicePlatform.Android ? "http://10.0.2.2:5010/api/" : "https://localhost:5011/api/";
-            //#endif
+            _client = client;
         }
 
-        public async Task<T> GetAsync(string api)
+        public async Task<T> GetAsync<T>(string api)
         {
             using (var response = await _client.GetAsync(baseUrl + api))
             {
@@ -31,18 +24,7 @@ namespace Client
             return default;
         }
 
-        public async Task<List<T>> GetListAsync(string api)
-        {
-            using (var response = await _client.GetAsync(baseUrl + api))
-            {
-                var apiResponse = await response.Content.ReadAsStringAsync();
-                if (!string.IsNullOrWhiteSpace(apiResponse) && response.IsSuccessStatusCode)
-                    return JsonConvert.DeserializeObject<List<T>>(apiResponse);
-            }
-            return default;
-        }
-
-        public async Task<T> PutAsync(T data, string api)
+        public async Task<T> PutAsync<T>(T data, string api)
         {
             var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
             using (var response = await _client.PutAsync(baseUrl + api, content))
@@ -54,19 +36,7 @@ namespace Client
             return default;
         }
 
-        public async Task<List<T>> PutListAsync(List<T> data, string api)
-        {
-            var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
-            using (var response = await _client.PutAsync(baseUrl + api, content))
-            {
-                var apiResponse = await response.Content.ReadAsStringAsync();
-                if (!string.IsNullOrWhiteSpace(apiResponse) && response.IsSuccessStatusCode)
-                    return JsonConvert.DeserializeObject<List<T>>(apiResponse);
-            }
-            return default;
-        }
-
-        public async Task<T> PostAsync(T data, string api)
+        public async Task<T> PostAsync<T>(T data, string api)
         {
             var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
             using (var response = await _client.PostAsync(baseUrl + api, content))
@@ -78,19 +48,7 @@ namespace Client
             return default;
         }
 
-        public async Task<List<T>> PostListAsync(IEnumerable<T> data, string api)
-        {
-            var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
-            using (var response = await _client.PostAsync(baseUrl + api, content))
-            {
-                var apiResponse = await response.Content.ReadAsStringAsync();
-                if (!string.IsNullOrWhiteSpace(apiResponse) && response.IsSuccessStatusCode)
-                    return JsonConvert.DeserializeObject<List<T>>(apiResponse);
-            }
-            return default;
-        }
-
-        public async Task<string> DeleteAsync(int id, string api)
+        public async Task<string> DeleteAsync(string api)
         {
             using var response = await _client.DeleteAsync(baseUrl + api);
             var apiResponse = await response.Content.ReadAsStringAsync();
