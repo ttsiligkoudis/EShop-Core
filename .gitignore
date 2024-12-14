@@ -1,3 +1,6 @@
+# Build directories
+bin/
+obj/
 
-.vs/EShop Core/EShop/App_Data/EShop.mdf
-.vs/EShop Core/EShop/App_Data/EShop_log.ldf
+# Visual Studio project files
+.vs/
